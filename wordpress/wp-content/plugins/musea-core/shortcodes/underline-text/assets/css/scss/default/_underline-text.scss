@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Underline Text shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-underline-text-holder {
+    @include eltdfRelativeHolderLayout(top);
+	margin: 0;
+	
+	.eltdf-ut-underline {
+		border-bottom: 2px solid $first-main-color;
+	}
+}
+
+/* ==========================================================================
+   Underline Text shortcode styles - end
+   ========================================================================== */
+
+

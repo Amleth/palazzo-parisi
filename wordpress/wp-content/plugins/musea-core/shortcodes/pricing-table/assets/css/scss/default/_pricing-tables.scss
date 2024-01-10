@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.eltdf-pricing-tables {
+    @include eltdfRelativeHolderLayout();
+}
+
+.eltdf-price-table {
+
+    .eltdf-pt-inner {
+        @include eltdfRelativeHolderLayout();
+        border: 1px solid #e4e4e4;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 17px 30px;
+                text-align: center;
+                list-style: none;
+
+                &.eltdf-pt-mark {
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    padding: 0 0 18px;
+                    @include subtitle();
+                    line-height: 1.2em;
+                    font-size: 16px;
+
+                }
+
+                &.eltdf-pt-title-holder {
+                    position: relative;
+                    color: $default-heading-color;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 600;
+	                letter-spacing: 1px;
+                    padding: 40px 0 0;
+	                
+                    .eltdf-pt-title {
+                        display: block;
+	                    padding: 0;
+                        margin: 10px 0 5px 0;
+	                    box-sizing: border-box;
+                        text-transform: uppercase;
+                    }
+
+                }
+
+                &.eltdf-pt-prices {
+                    position: relative;
+                    padding: 0 15px 2px;
+	                
+                    .eltdf-pt-value {
+                        position: relative;
+                        font-size: 48px;
+                        line-height: 1em;
+                        font-weight: 400;
+                        color: $default-heading-color;
+                        @include eltdfH2();
+                        letter-spacing: .05em;
+                    }
+
+                    .eltdf-pt-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: 48px;
+                        line-height: 1em;
+                        font-weight: 400;
+                        color: $default-heading-color;
+                        @include eltdfH2();
+                        letter-spacing: .05em;
+                    }
+                }
+
+                &.eltdf-pt-content {
+	                padding: 0;
+
+                    ul{
+                        li{
+                            padding: 2px 15px 29px;
+                        }
+                    }
+                }
+
+                &.eltdf-pt-button {
+                    padding: 43px 15px 54px;
+
+                    .eltdf-btn{
+                        padding: 11px 52px;
+
+                        &.eltdf-btn-outline-slit{
+                            svg{
+                                top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

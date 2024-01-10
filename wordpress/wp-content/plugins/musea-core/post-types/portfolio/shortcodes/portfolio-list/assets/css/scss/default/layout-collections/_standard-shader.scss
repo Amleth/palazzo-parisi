@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-list-holder {
+	
+	&.eltdf-pl-standard-shader {
+		
+		article {
+			
+			&:hover {
+				
+				.eltdf-pli-image {
+					
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+			
+			.eltdf-pli-image {
+				
+				&:after {
+					//@include eltdfImageOverlayHoverStyle(false);
+					z-index: 1;
+				}
+			}
+			
+			.eltdf-pli-link {
+				z-index: 2;
+			}
+		}
+		
+		.eltdf-pli-text-holder {
+			@include eltdfRelativeHolderLayout();
+			margin: 25px 0 0;
+			text-align: center;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - end
+   ========================================================================== */

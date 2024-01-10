@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Footer styles - begin
+   ========================================================================== */
+/* ==========================================================================
+   Footer style - begin
+   ========================================================================== */
+.eltdf-page-footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-page-footer p, .eltdf-page-footer a {
+  color: #fff;
+}
+
+.eltdf-page-footer a:hover {
+  color: #c9ab81;
+}
+
+.eltdf-page-footer .widget a {
+  color: #fff;
+}
+
+.eltdf-page-footer .widget a:hover {
+  color: #c9ab81 !important;
+}
+
+.no-touch body:not(.error404) .eltdf-page-footer.eltdf-footer-uncover {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -o-transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: left 0.33s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.eltdf-right-side-menu-opened .eltdf-page-footer.eltdf-footer-uncover {
+  left: -270px;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #383838;
+  border-top: 0 solid #e1e1e1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-alignment-center {
+  text-align: center;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-alignment-left {
+  text-align: left;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-alignment-right {
+  text-align: right;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-inner {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-inner.eltdf-grid {
+  padding: 116px 0;
+}
+
+.eltdf-page-footer .eltdf-footer-top-holder .eltdf-footer-top-inner.eltdf-full-width {
+  padding: 116px 40px;
+}
+
+.eltdf-page-footer .eltdf-footer-bottom-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #383838;
+  border-top: 0 solid #e1e1e1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-page-footer .eltdf-footer-bottom-holder .eltdf-footer-bottom-inner {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-page-footer .eltdf-footer-bottom-holder .eltdf-footer-bottom-inner.eltdf-grid {
+  padding: 19px 0;
+}
+
+.eltdf-page-footer .eltdf-footer-bottom-holder .eltdf-footer-bottom-inner.eltdf-full-width {
+  padding: 19px 40px;
+}
+
+/* ==========================================================================
+   Footer style - end
+   ========================================================================== */
+/* ==========================================================================
+   Footer styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map.css.map */

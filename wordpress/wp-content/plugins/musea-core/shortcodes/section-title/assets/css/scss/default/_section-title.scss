@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.page-template-coming-soon-page{
+
+	@include phone-landscape{
+		.eltdf-section-title-holder .eltdf-st-title {
+			font-size: 39px!important;
+		}
+		.eltdf-section-title-holder .eltdf-st-text {
+			margin: 20px 8% 0 8%!important;
+		}
+	}
+}
+
+.eltdf-section-title-holder {
+    @include eltdfRelativeHolderLayout();
+	box-sizing: border-box;
+
+	.eltdf-st-caption, .eltdf-st-title, .eltdf-st-text {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+
+	.eltdf-st-caption {
+		transition: .5s;
+	}
+
+	.eltdf-st-title {
+		transition: .5s .3s;
+
+		.eltdf-st-side-line-left {
+			transform: scaleX(0);
+			transform-origin: 100% 50%;
+			transition: .5s .5s;
+		}
+
+		.eltdf-st-side-line-right {
+			transform: scaleX(0);
+			transform-origin: 0 50%;
+			transition: .5s .5s;
+		}
+	}
+
+	.eltdf-st-text {
+		transition: .5s .6s;
+	}
+
+	&.eltdf-appear {
+
+		.eltdf-st-caption, .eltdf-st-title, .eltdf-st-text {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		.eltdf-st-title {
+
+			.eltdf-st-side-line-left, .eltdf-st-side-line-right {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	.eltdf-st-side-line-left,
+	.eltdf-st-side-line-right{
+		display: none;
+	}
+
+	&.eltdf-st-decorative-line{
+
+		.eltdf-st-title {
+			margin: 0;
+
+			.eltdf-st-title-inner{
+				//background-color: #fff;
+				padding: 0 78px 0 85px;
+				position: relative;
+				display: inline-block;
+
+				@include ipad-landscape{
+					padding: 0 10px;
+				}
+
+				.eltdf-st-side-line-left,
+				.eltdf-st-side-line-right{
+					position: absolute;
+					width: 170px;
+					display: inline-block;
+					height: 1px;
+					background-color: currentColor;
+					top: calc(50% - 1px);
+					z-index: 0;
+					opacity: .35;
+
+					@include laptop-landscape-mac{
+						width: 100px;
+					}
+
+					@include ipad-landscape{
+						display: none;
+					}
+				}
+				.eltdf-st-side-line-left{
+					left: -170px;
+
+					@include laptop-landscape-mac{
+						left: -60px;
+					}
+				}
+				.eltdf-st-side-line-right{
+					right: -170px;
+
+					@include laptop-landscape-mac{
+						right: -60px;
+					}
+				}
+			}
+
+			//&:before,
+			//&:after{
+			//	content: "";
+			//	width: 170px;
+			//	display: inline-block;
+			//	height: 1px;
+			//	background-color: currentColor;
+			//	opacity: .4;
+			//	margin-bottom: .25em;
+			//}
+			//&:before{
+			//	margin-right: 86px;
+			//}
+			//&:after{
+			//	margin-left: 78px;
+			//}
+		}
+
+		//h2.eltdf-st-title {
+		//	.eltdf-st-title-inner{
+		//		padding: 0 78px 0 86px;
+        //
+		//		.eltdf-st-side-line{
+		//			width: 166%;
+		//			left: -33%;
+		//		}
+		//	}
+		//}
+
+		h3.eltdf-st-title,
+		h4.eltdf-st-title,
+		h5.eltdf-st-title,
+		h6.eltdf-st-title {
+
+			.eltdf-st-title-inner{
+				padding: 0 18px 0 25px;
+
+				.eltdf-st-side-line-left,
+				.eltdf-st-side-line-right{
+					width: 50px;
+
+					@include laptop-landscape-mac{
+						width: 40px;
+					}
+				}
+
+				.eltdf-st-side-line-left{
+					left: -50px;
+
+					@include laptop-landscape-mac{
+						left: -30px;
+					}
+				}
+				.eltdf-st-side-line-right{
+					right: -50px;
+
+					@include laptop-landscape-mac{
+						right: -30px;
+					}
+				}
+			}
+		}
+
+		&.eltd-decorative-line-full-color{
+
+		}
+	}
+	
+    .eltdf-st-title {
+        margin: 0;
+
+		.qodef-st-line-breaker{
+			display: block;
+
+			@include ipad-landscape{
+				display: inline;
+			}
+		}
+
+    }
+    .eltdf-st-caption{
+		@include title();
+		display: block;
+		margin-bottom: 11px;
+	}
+    .eltdf-st-text {
+	    display: block;
+        margin: 21px 0 0;
+
+		br{
+			@include phone-landscape{
+				display: inline;
+				content: "";
+			}
+		}
+    }
+	
+	.eltdf-st-button {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		
+		.eltdf-btn {
+			margin-top: 42px;
+		}
+	}
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

@@ -1,0 +1,815 @@
+# Copyright (C) 2021 Select Themes
+# This file is distributed under the same license as the Musea Shows plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Musea Shows 1.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/musea-shows\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-10-29T13:41:28+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: musea-shows\n"
+
+#. Plugin Name of the plugin
+msgid "Musea Shows"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds all post types needed by our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Select Themes"
+msgstr ""
+
+#: admin/options-map/shows-options-map.php:9
+#: post-types/shows/helper-functions.php:180
+msgid "Shows"
+msgstr ""
+
+#: modules/events/admin/options/event-options-map.php:8
+msgid "Event Title"
+msgstr ""
+
+#: modules/events/admin/options/event-options-map.php:18
+msgid "Height"
+msgstr ""
+
+#: modules/events/admin/options/event-options-map.php:19
+msgid "Set a height for Title Area"
+msgstr ""
+
+#: modules/events/admin/options/event-options-map.php:32
+msgid "Title background image"
+msgstr ""
+
+#: modules/events/admin/options/event-options-map.php:33
+msgid "Choose an image from the gallery"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:47
+msgid "Event List"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:49
+#: post-types/roles/shortcodes/role-list/role-list.php:44
+#: post-types/roles/shortcodes/role-member/role-member.php:37
+#: post-types/roles/shortcodes/role-slider/role-slider.php:37
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:43
+#: post-types/shows/shortcodes/show-list/show-list.php:44
+#: post-types/shows/shortcodes/show-single/show-single.php:37
+#: post-types/shows/shortcodes/show-slider/show-slider.php:37
+msgid "by MUSEA"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:55
+msgid "One-Category Event List"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:56
+#: post-types/roles/shortcodes/role-list/role-list.php:80
+#: post-types/roles/shortcodes/role-slider/role-slider.php:71
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:71
+#: post-types/shows/shortcodes/show-list/show-list.php:115
+#: post-types/shows/shortcodes/show-slider/show-slider.php:82
+msgid "Enter one category slug (leave empty for showing all categories)"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:67
+msgid "Show Only Events with Listed IDs"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:73
+#: post-types/roles/shortcodes/role-list/role-list.php:91
+#: post-types/roles/shortcodes/role-slider/role-slider.php:82
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:82
+#: post-types/shows/shortcodes/show-list/show-list.php:126
+#: post-types/shows/shortcodes/show-slider/show-slider.php:76
+msgid "Delimit ID numbers by comma (leave empty for all)"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:78
+msgid "Number of Events"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:79
+msgid "Set number of items for your shows list. Enter -1 to show all."
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:85
+#: post-types/roles/shortcodes/role-list/role-list.php:96
+#: post-types/roles/shortcodes/role-slider/role-slider.php:87
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:93
+#: post-types/shows/shortcodes/show-list/show-list.php:153
+#: post-types/shows/shortcodes/show-slider/show-slider.php:109
+msgid "Order By"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:92
+#: post-types/roles/shortcodes/role-list/role-list.php:103
+#: post-types/roles/shortcodes/role-slider/role-slider.php:94
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:100
+#: post-types/shows/shortcodes/show-list/show-list.php:160
+#: post-types/shows/shortcodes/show-slider/show-slider.php:116
+msgid "Order"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:141
+msgid "Button Background Color"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:142
+#: modules/events/shortcodes/events-list/event-list.php:148
+msgid "This option is only for Get Ticket button"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:147
+msgid "Button Color"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:287
+#: modules/events/shortcodes/events-list/event-list.php:315
+#: post-types/roles/shortcodes/role-list/role-list.php:321
+#: post-types/roles/shortcodes/role-list/role-list.php:349
+#: post-types/roles/shortcodes/role-slider/role-slider.php:186
+#: post-types/roles/shortcodes/role-slider/role-slider.php:214
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:277
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:305
+#: post-types/shows/shortcodes/show-list/show-list.php:428
+#: post-types/shows/shortcodes/show-list/show-list.php:456
+#: post-types/shows/shortcodes/show-slider/show-slider.php:206
+#: post-types/shows/shortcodes/show-slider/show-slider.php:234
+msgid "Category"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:350
+#: modules/events/shortcodes/events-list/event-list.php:381
+#: post-types/roles/shortcodes/role-list/role-list.php:384
+#: post-types/roles/shortcodes/role-list/role-list.php:415
+#: post-types/roles/shortcodes/role-member/role-member.php:154
+#: post-types/roles/shortcodes/role-member/role-member.php:185
+#: post-types/roles/shortcodes/role-slider/role-slider.php:249
+#: post-types/roles/shortcodes/role-slider/role-slider.php:280
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:340
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:371
+#: post-types/shows/shortcodes/show-list/show-list.php:491
+#: post-types/shows/shortcodes/show-list/show-list.php:522
+#: post-types/shows/shortcodes/show-single/show-single.php:168
+#: post-types/shows/shortcodes/show-single/show-single.php:199
+#: post-types/shows/shortcodes/show-slider/show-slider.php:269
+#: post-types/shows/shortcodes/show-slider/show-slider.php:300
+msgid "Id"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/event-list.php:350
+#: modules/events/shortcodes/events-list/event-list.php:378
+#: post-types/roles/shortcodes/role-list/role-list.php:384
+#: post-types/roles/shortcodes/role-list/role-list.php:412
+#: post-types/roles/shortcodes/role-member/role-member.php:154
+#: post-types/roles/shortcodes/role-member/role-member.php:182
+#: post-types/roles/shortcodes/role-slider/role-slider.php:249
+#: post-types/roles/shortcodes/role-slider/role-slider.php:277
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:340
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:368
+#: post-types/shows/shortcodes/show-list/show-list.php:491
+#: post-types/shows/shortcodes/show-list/show-list.php:519
+#: post-types/shows/shortcodes/show-single/show-single.php:168
+#: post-types/shows/shortcodes/show-single/show-single.php:196
+#: post-types/shows/shortcodes/show-slider/show-slider.php:269
+#: post-types/shows/shortcodes/show-slider/show-slider.php:297
+msgid "Title"
+msgstr ""
+
+#: modules/events/shortcodes/events-list/templates/parts/posts-not-found.php:1
+#: post-types/roles/shortcodes/role-list/templates/role-holder.php:10
+#: post-types/shows/shortcodes/fullscreen-show-grid/templates/parts/posts-not-found.php:1
+#: post-types/shows/shortcodes/show-list/templates/parts/posts-not-found.php:1
+#: post-types/shows/shortcodes/show-list/templates/show-holder-masonry.php:17
+#: post-types/shows/shortcodes/show-list/templates/show-holder.php:18
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: modules/events/templates/single/parts/tickets.php:27
+msgid "Get ticket"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:13
+msgid "Role Member Info"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:22
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:64
+msgid "Show Image"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:23
+msgid "Choose an Image for displaying in role list. If not uploaded, featured image will be shown."
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:32
+msgid "Position"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:33
+msgid "The members's role"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:42
+msgid "Email"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:43
+msgid "The members's email"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:116
+msgid "Role Performances"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:125
+msgid "Add New Performance"
+msgstr ""
+
+#: post-types/roles/admin/meta-boxes/roles-meta-boxes.php:130
+msgid "Show"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:8
+msgid "Roles Archive"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:18
+#: post-types/shows/admin/options/shows-options-map.php:18
+msgid "Number of Items"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:19
+#: post-types/shows/admin/options/shows-options-map.php:19
+msgid "Set number of items for your shows list on archive pages. Default value is 12"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:31
+#: post-types/roles/shortcodes/role-list/role-list.php:51
+#: post-types/shows/admin/options/shows-options-map.php:31
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:49
+#: post-types/shows/shortcodes/show-list/show-list.php:62
+msgid "Number of Columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:33
+msgid "Set number of columns for your roles list on archive pages. Default value is 4 columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:36
+#: post-types/shows/admin/options/shows-options-map.php:36
+msgid "2 Columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:37
+#: post-types/shows/admin/options/shows-options-map.php:37
+msgid "3 Columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:38
+#: post-types/shows/admin/options/shows-options-map.php:38
+msgid "4 Columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:39
+#: post-types/shows/admin/options/shows-options-map.php:39
+msgid "5 Columns"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:48
+#: post-types/roles/shortcodes/role-list/role-list.php:65
+#: post-types/roles/shortcodes/role-slider/role-slider.php:56
+#: post-types/shows/admin/options/shows-options-map.php:48
+#: post-types/shows/shortcodes/show-list/show-list.php:76
+#: post-types/shows/shortcodes/show-slider/show-slider.php:56
+msgid "Space Between Items"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:49
+msgid "Set space size between roles items for your roles list on archive pages. Default value is normal"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:58
+msgid "Roles Single"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:69
+msgid "Role Title Area"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:70
+#: post-types/shows/admin/options/shows-options-map.php:104
+msgid "Enabling this option will show title area on single projects"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:73
+#: post-types/roles/shortcodes/role-list/role-list.php:53
+#: post-types/shows/admin/options/shows-options-map.php:107
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:51
+#: post-types/shows/shortcodes/show-list/show-list.php:64
+msgid "Default"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:74
+#: post-types/shows/admin/options/shows-options-map.php:108
+msgid "Yes"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:75
+#: post-types/shows/admin/options/shows-options-map.php:109
+msgid "No"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:87
+msgid "Roles Single Slug"
+msgstr ""
+
+#: post-types/roles/admin/options/roles-options-map.php:88
+#: post-types/shows/admin/options/shows-options-map.php:133
+msgid "Enter if you wish to use a different Single Project slug (Note: After entering slug, navigate to Settings -> Permalinks and click \"Save\" in order for changes to take effect)"
+msgstr ""
+
+#: post-types/roles/helper-functions.php:168
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:162
+msgid "Role Member"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:42
+msgid "Role List"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:54
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:52
+#: post-types/shows/shortcodes/show-list/show-list.php:65
+msgid "One"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:55
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:53
+#: post-types/shows/shortcodes/show-list/show-list.php:66
+msgid "Two"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:56
+#: post-types/roles/shortcodes/role-slider/role-slider.php:46
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:54
+#: post-types/shows/shortcodes/show-list/show-list.php:67
+#: post-types/shows/shortcodes/show-slider/show-slider.php:46
+msgid "Three"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:57
+#: post-types/roles/shortcodes/role-slider/role-slider.php:47
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:55
+#: post-types/shows/shortcodes/show-list/show-list.php:68
+#: post-types/shows/shortcodes/show-slider/show-slider.php:47
+msgid "Four"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:58
+#: post-types/roles/shortcodes/role-slider/role-slider.php:48
+#: post-types/shows/shortcodes/show-list/show-list.php:69
+#: post-types/shows/shortcodes/show-slider/show-slider.php:48
+msgid "Five"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:60
+#: post-types/shows/shortcodes/show-list/show-list.php:71
+msgid "Default value is Three"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:72
+#: post-types/roles/shortcodes/role-slider/role-slider.php:63
+msgid "Number of role members per page"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:73
+#: post-types/roles/shortcodes/role-slider/role-slider.php:64
+msgid "Set number of items for your role list. Enter -1 to show all."
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:79
+#: post-types/roles/shortcodes/role-slider/role-slider.php:70
+msgid "One-Category Role List"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:85
+msgid "Show Only Members with Listed IDs"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:110
+msgid "Show Feature Image"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:116
+#: post-types/roles/shortcodes/role-member/role-member.php:54
+#: post-types/roles/shortcodes/role-slider/role-slider.php:116
+msgid "Show Social Icons"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:122
+#: post-types/roles/shortcodes/role-member/role-member.php:60
+#: post-types/roles/shortcodes/role-slider/role-slider.php:122
+msgid "Type"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:124
+#: post-types/roles/shortcodes/role-member/role-member.php:62
+#: post-types/roles/shortcodes/role-slider/role-slider.php:124
+msgid "Normal"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:125
+#: post-types/roles/shortcodes/role-member/role-member.php:63
+#: post-types/roles/shortcodes/role-slider/role-slider.php:125
+msgid "Circle"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-list/role-list.php:126
+#: post-types/roles/shortcodes/role-member/role-member.php:64
+#: post-types/roles/shortcodes/role-slider/role-slider.php:126
+#: post-types/shows/admin/options/shows-options-map.php:68
+#: post-types/shows/shortcodes/show-list/show-list.php:93
+#: post-types/shows/shortcodes/show-single/show-single.php:65
+msgid "Square"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-member/role-member.php:35
+msgid "Role Single"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-member/role-member.php:44
+msgid "Select Role Member"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-member/role-member.php:49
+#: post-types/shows/shortcodes/show-single/show-single.php:49
+msgid "If you left this field empty then project ID will be of the current page"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:35
+msgid "Role Slider"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:44
+#: post-types/shows/shortcodes/show-slider/show-slider.php:44
+msgid "Number of Columns in Row"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:49
+#: post-types/shows/shortcodes/show-slider/show-slider.php:49
+msgid "Six"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:76
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:76
+msgid "Show Only Projects with Listed IDs"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:101
+#: post-types/shows/shortcodes/show-slider/show-slider.php:123
+msgid "Enable Slider Navigation Arrows"
+msgstr ""
+
+#: post-types/roles/shortcodes/role-slider/role-slider.php:108
+#: post-types/shows/shortcodes/show-slider/show-slider.php:130
+msgid "Enable Slider Pagination"
+msgstr ""
+
+#: post-types/roles/templates/single/parts/content.php:6
+msgid "Contact:"
+msgstr ""
+
+#: post-types/roles/templates/single/parts/performances.php:11
+msgid "Performances:"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:12
+msgid "Show General"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:20
+msgid "Shows Description"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:21
+msgid "Description field"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:65
+msgid "Choose an Image for displaying in show list. If not uploaded, featured image will be shown."
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:74
+msgid "Support Show Image"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:75
+msgid "Choose an Image for displaying in show description."
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:84
+msgid "Show Support Custom Link"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:93
+msgid "Show Location"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:94
+msgid "Enter the address of the show location that will be displayed in sidebar"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:103
+msgid "Show Location Link"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:104
+msgid "Enter Show map link"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:113
+msgid "Show Events"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:122
+msgid "Add New Event"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:127
+msgid "Event"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:140
+msgid "Show Roles"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:149
+msgid "Add New Participant Role"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:154
+msgid "Role"
+msgstr ""
+
+#: post-types/shows/admin/meta-boxes/shows-meta-boxes.php:163
+msgid "Add New Role Member"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:8
+msgid "Shows Archive"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:33
+msgid "Set number of columns for your shows list on archive pages. Default value is 4 columns"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:49
+msgid "Set space size between shows items for your shows list on archive pages. Default value is normal"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:60
+#: post-types/shows/shortcodes/show-list/show-list.php:90
+#: post-types/shows/shortcodes/show-single/show-single.php:62
+msgid "Image Proportions"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:62
+msgid "Set image proportions for your shows list on archive pages. Default value is landscape"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:65
+#: post-types/shows/shortcodes/show-list/show-list.php:92
+#: post-types/shows/shortcodes/show-single/show-single.php:64
+msgid "Original"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:66
+#: post-types/shows/shortcodes/show-list/show-list.php:94
+#: post-types/shows/shortcodes/show-single/show-single.php:66
+msgid "Landscape"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:67
+#: post-types/shows/shortcodes/show-list/show-list.php:95
+#: post-types/shows/shortcodes/show-single/show-single.php:67
+msgid "Portrait"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:69
+#: post-types/shows/shortcodes/show-list/show-list.php:96
+#: post-types/shows/shortcodes/show-single/show-single.php:68
+msgid "Medium"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:70
+#: post-types/shows/shortcodes/show-list/show-list.php:97
+#: post-types/shows/shortcodes/show-single/show-single.php:69
+msgid "Large"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:79
+msgid "Item Style"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:81
+msgid "Set item style for your shows list on archive pages. Default value is Standard - Shader"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:84
+msgid "Info bellow"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:85
+msgid "Info hover"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:103
+msgid "Show Title Area"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:121
+msgid "Show Comments"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:122
+msgid "Enabling this option will show comments on your page"
+msgstr ""
+
+#: post-types/shows/admin/options/shows-options-map.php:132
+msgid "Shows Single Slug"
+msgstr ""
+
+#: post-types/shows/helper-functions.php:31
+msgid "Show Item"
+msgstr ""
+
+#: post-types/shows/helper-functions.php:32
+msgid "Show Social Share for Show Items"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:41
+msgid "Fullscreen Show Grid"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:57
+msgid "Default value is Four"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:63
+msgid "Number of Shows"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:64
+msgid "Set number of items. Enter -1 to show all."
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:70
+msgid "One-Category Show Grid"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:87
+msgid "One-Tag Show Grid"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:88
+msgid "Enter one tag slug (leave empty for showing all tags)"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:107
+#: post-types/shows/shortcodes/show-list/show-list.php:131
+#: post-types/shows/shortcodes/show-single/show-single.php:54
+#: post-types/shows/shortcodes/show-slider/show-slider.php:87
+msgid "Title Tag"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:109
+#: post-types/shows/shortcodes/show-single/show-single.php:57
+#: post-types/shows/shortcodes/show-slider/show-slider.php:90
+#: post-types/shows/shortcodes/show-slider/show-slider.php:97
+#: post-types/shows/shortcodes/show-slider/show-slider.php:104
+msgid "Content Layout"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:405
+#: post-types/shows/shortcodes/fullscreen-show-grid/fullscreen-show-grid.php:433
+msgid "Tag"
+msgstr ""
+
+#: post-types/shows/shortcodes/fullscreen-show-grid/templates/show-item-grid.php:16
+msgid "About"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:42
+msgid "Show List"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:51
+msgid "Show List Template"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:53
+msgid "Gallery"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:54
+msgid "Masonry"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:83
+msgid "Number of show singles per page"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:84
+#: post-types/shows/shortcodes/show-slider/show-slider.php:64
+msgid "Set number of items for your show list. Enter -1 to show all."
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:99
+msgid "Set image proportions for your show list."
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:106
+msgid "Enable Fixed Image Proportions"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:114
+#: post-types/shows/shortcodes/show-slider/show-slider.php:81
+msgid "One-Category Show List"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:120
+#: post-types/shows/shortcodes/show-slider/show-slider.php:70
+msgid "Show Only Shows with Listed IDs"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:134
+#: post-types/shows/shortcodes/show-list/show-list.php:141
+#: post-types/shows/shortcodes/show-list/show-list.php:148
+#: post-types/shows/shortcodes/show-list/show-list.php:172
+#: post-types/shows/shortcodes/show-single/show-single.php:89
+#: post-types/shows/shortcodes/show-single/show-single.php:96
+msgid "Layout"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:139
+#: post-types/shows/shortcodes/show-single/show-single.php:87
+#: post-types/shows/shortcodes/show-slider/show-slider.php:95
+msgid "Show category"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:146
+#: post-types/shows/shortcodes/show-single/show-single.php:94
+#: post-types/shows/shortcodes/show-slider/show-slider.php:102
+msgid "Show date range"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:167
+#: post-types/shows/shortcodes/show-single/show-single.php:78
+#: post-types/shows/shortcodes/show-slider/show-slider.php:144
+msgid "Show Layout"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:169
+#: post-types/shows/shortcodes/show-single/show-single.php:80
+#: post-types/shows/shortcodes/show-slider/show-slider.php:146
+msgid "Info Bellow"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/show-list.php:170
+#: post-types/shows/shortcodes/show-single/show-single.php:81
+#: post-types/shows/shortcodes/show-slider/show-slider.php:147
+msgid "Info on Hover"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-list/templates/pagination/load-more.php:16
+msgid "Load more"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-single/show-single.php:35
+msgid "Show Single"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-single/show-single.php:44
+msgid "Select Show Single"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-single/show-single.php:71
+msgid "Set image proportions for your show."
+msgstr ""
+
+#: post-types/shows/shortcodes/show-slider/show-slider.php:35
+msgid "Show Slider"
+msgstr ""
+
+#: post-types/shows/shortcodes/show-slider/show-slider.php:63
+msgid "Number of show members per page"
+msgstr ""

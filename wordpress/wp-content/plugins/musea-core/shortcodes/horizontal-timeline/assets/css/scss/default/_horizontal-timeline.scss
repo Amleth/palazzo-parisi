@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Horizontal Timeline shortcode style - begin
+   ========================================================================== */
+
+.eltdf-horizontal-timeline {
+	@include eltdfRelativeHolderLayout(top);
+	opacity: 0;
+	transition: opacity 0.2s;
+	
+	&:before {
+		// never visible - this is used in jQuery to check the current MQ
+		content: 'desktop';
+		display: none;
+		
+		@include ipad-landscape {
+			content: 'mobile';
+		}
+	}
+	
+	&.eltdf-loaded {
+		opacity: 1;
+	}
+	
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+	}
+	
+	ol, ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	.eltdf-ht-nav {
+		@include eltdfRelativeHolderLayout(top);
+	}
+	
+	.eltdf-ht-nav-wrapper {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 20px);
+		height: 60px;
+		margin: 0 10px;
+		overflow: hidden;
+	}
+	
+	.eltdf-ht-nav-inner {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		height: 2px;
+		background-color: #cdcdcd;
+		transition: transform .4s ease;
+		
+		a {
+			position: absolute;
+			bottom: 0;
+			padding: 0 0 6px;
+			color: #bfbfbf;
+			font-size: 23px;
+			line-height: 34px;
+			font-weight: 700;
+			text-align: center;
+			z-index: 2;
+			
+			&:hover {
+				
+				&:after {
+					background-color: $default-heading-color;
+				}
+			}
+			
+			&.eltdf-selected {
+				pointer-events: none;
+				color: $default-heading-color;
+				
+				&:after {
+					background-color: $default-heading-color;
+				}
+			}
+			
+			&.eltdf-older-event {
+				
+				&:after {
+					background-color: $default-heading-color;
+				}
+			}
+			
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -4px;
+				left: calc(50% - 5px);
+				right: auto;
+				height: 6px;
+				width: 6px;
+				background-color: #cdcdcd;
+				border: 2px solid #fff;
+				border-radius: 100%;
+				box-sizing: content-box;
+				transition: background-color 0.3s;
+			}
+		}
+	}
+	
+	.eltdf-ht-nav-filling-line {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: $default-heading-color;
+		z-index: 1;
+		transform: scaleX(0);
+		transform-origin: left center;
+		transition: transform .3s ease;
+	}
+	
+	.eltdf-ht-nav-navigation {
+		
+		a {
+			position: absolute;
+			bottom: -1px;
+			font-size: 24px;
+			line-height: 1;
+			z-index: 2;
+			
+			&:after {
+				display: block;
+				font-family: 'ElegantIcons';
+			}
+			
+			&.eltdf-prev {
+				left: -8px;
+				
+				&:after {
+					content: "\34";
+				}
+			}
+			
+			&.eltdf-next {
+				right: -8px;
+				
+				&:after {
+					content: "\35";
+				}
+			}
+			
+			&.eltdf-inactive {
+				cursor: not-allowed;
+			}
+		}
+	}
+	
+	.eltdf-ht-content {
+		@include eltdfRelativeHolderLayout(top);
+		margin-top: 70px;
+		overflow: hidden;
+		transition: height 0.4s;
+		
+		.eltdf-hti-content-inner {
+			margin: 0 -25px;
+			
+			&.eltdf-timeline-has-image {
+				
+				> * {
+					width: 50%;
+					float: left;
+				}
+			}
+			
+			> * {
+				position: relative;
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				padding: 0 25px;
+				box-sizing: border-box;
+			}
+		}
+		
+		li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			animation-duration: 0.4s;
+			animation-timing-function: ease-in-out;
+			opacity: 0;
+			z-index: 1;
+			transform: translateX(-100%);
+			
+			&.eltdf-selected {
+				position: relative;
+				opacity: 1;
+				z-index: 2;
+				transform: translateX(0);
+			}
+			
+			&.eltdf-enter-left,
+			&.eltdf-leave-left {
+				animation-name: eltdf-enter-left;
+			}
+			
+			&.eltdf-enter-right,
+			&.eltdf-leave-right {
+				animation-name: eltdf-enter-right;
+			}
+			
+			&.eltdf-leave-left,
+			&.eltdf-leave-right {
+				animation-direction: reverse;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes eltdf-enter-right {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@-moz-keyframes eltdf-enter-right {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0%);
+	}
+}
+
+@keyframes eltdf-enter-right {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes eltdf-enter-left {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@-moz-keyframes eltdf-enter-left {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0%);
+	}
+}
+
+@keyframes eltdf-enter-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+/* ==========================================================================
+   Horizontal Timeline shortcode style - end
+   ========================================================================== */

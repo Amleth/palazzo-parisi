@@ -1,0 +1,53 @@
+
+/* ==========================================================================
+   Fullscreen Show Grid responsive style - begin
+   ========================================================================== */
+
+.eltdf-fullscreen-show-grid-holder{
+	
+	@include ipad-landscape{
+		&.eltdf-fsg-three-columns,
+		&.eltdf-fsg-four-columns {
+			
+			.eltdf-fsg-item {
+				width: 50%;
+			}
+			
+			.eltdf-fsg-item-table-cell-content{
+				width: 70%!important;
+			}
+		}
+	}
+	
+	@include ipad-portrait{
+		&.eltdf-fsg-three-columns,
+		&.eltdf-fsg-four-columns {
+			
+			.eltdf-fsg-item {
+				width: 50%;
+			}
+			
+			.eltdf-fsg-item-table-cell-content{
+				width: 70%!important;
+			}
+		}
+	}
+	
+	@include phone-portrait{
+		&.eltdf-fsg-two-columns,
+		&.eltdf-fsg-three-columns,
+		&.eltdf-fsg-four-columns {
+			
+			.eltdf-fsg-item {
+				width: 100%!important;
+			}
+			
+			.eltdf-fsg-item-table-cell-content{
+				width: 70%;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Fullscreen Show Grid responsive style - end
+   ========================================================================== */

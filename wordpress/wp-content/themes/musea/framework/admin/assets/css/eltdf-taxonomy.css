@@ -1,0 +1,48 @@
+.form-field.eltdf-hide {
+	display: none;
+}
+
+.form-field.eltdf-table-row {
+	display: table-row;
+}
+
+.eltdf-tax-checkbox-group {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	clear: both;
+	margin: 0 0 -15px;
+}
+
+.eltdf-tax-checkbox-item {
+	float: left;
+	padding: 0;
+	margin: 10px 0;
+	text-align: left;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+.eltdf-tax-checkbox-item.eltdf-hide {
+	display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+	
+	.eltdf-tax-checkbox-item {
+		width: 33.33333333333333%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	
+	.eltdf-tax-checkbox-item {
+		width: 50%;
+	}
+}
+
+.eltdf-tax-checkbox-item label {
+	display: inline-block;
+	padding: 0;
+}

@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+
+.eltdf-team-holder {
+    @include eltdfRelativeHolderLayout();
+	
+	&.eltdf-team-info-on-image {
+		
+		.touch & {
+			cursor: pointer;
+		}
+
+		&:hover {
+			
+			.eltdf-team-social-wrapper {
+				opacity: 1;
+			}
+
+			.eltdf-team-social-inner {
+				transform: translate3d(0,0,0);
+				transition: transform .45s cubic-bezier(0.64, 0.01, 0.15, 1.16), opacity .5s;
+			}
+		}
+		
+		.eltdf-team-social-holder {
+			margin: 7px 0 0;
+            position: static;
+		}
+	}
+
+    .eltdf-team-image {
+        @include eltdfRelativeHolderLayout();
+
+        img {
+            display: block;
+        }
+    }
+	
+	.eltdf-team-info {
+		@include eltdfRelativeHolderLayout();
+		margin: 31px 0 0;
+	}
+
+    .eltdf-team-name {
+        margin: 0;
+		text-align: center;
+    }
+
+    .eltdf-team-position {
+        margin: 7px 0 0;
+		text-align: center;
+    }
+	
+	.eltdf-team-text {
+		margin: 10px 0 0;
+	}
+	
+	.eltdf-team-social-wrapper {
+		@include eltdfAbsoluteHolderLayout();
+		background-color: rgba(#fff, .85);
+		z-index: 1;
+		opacity: 0;
+		transform: translateZ(0);
+		transition: opacity .3s;
+	}
+	
+	.eltdf-team-social-outer {
+		@include eltdfTableLayout();
+	}
+	
+	.eltdf-team-social-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		padding: 20px 40px 33px;
+		vertical-align: bottom;
+		transform: translate3d(0,40px,0);
+		transition: transform .2s ease;
+	}
+	
+	.eltdf-team-social-holder {
+		position: absolute;
+		bottom: 0;
+		margin: 17px 0 0;
+        width: 200px;
+        overflow: hidden;
+        height: 46px;
+
+		.eltdf-team-social-floating,
+		.eltdf-team-social-opener{
+			display: inline-block;
+			background-color: #fff;
+			vertical-align: bottom;
+		}
+
+		.eltdf-team-social-floating{
+			position: absolute;
+            left: -150px;
+			bottom: 0;
+			//width: 150px;
+            z-index: 1;
+		}
+
+        .eltdf-team-social-opener{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+			min-height: 15px;
+        }
+
+		.eltdf-team-icon-opener{
+			font-size: 14px;
+			margin: 0;
+			padding: 17px 10px 14px 13px;
+			display: inline-block;
+			color: $default-text-color;
+
+
+			@include ie-media-query{
+				padding: 16px 16px 15px 17px;
+			}
+			@include edge-media-query{
+				padding: 16px 16px 15px 17px;
+			}
+		}
+		
+		.eltdf-team-icon {
+			font-size: 14px;
+			margin: 0;
+			padding: 10px 9px 9px 9px;
+			display: inline-block;
+
+			a{
+				color: $default-text-color;
+			}
+
+			&:hover{
+				a{
+					color: $first-main-color;
+				}
+			}
+
+			&:last-child{
+				padding: 10px 20px 9px 9px;
+			}
+			
+			.eltdf-icon-element {
+				font-size: inherit;
+				transition: none;
+			}
+		}
+	}
+
+    .eltdf-team-link {
+        @include eltdfAbsoluteHolderLayout();
+    }
+
+}
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Portfolio vertical loop shortcode responsive style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-vertical-loop-holder {
+
+	@include phone-portrait {
+		.eltdf-pvl-navigation-holder {
+			height: 34px;
+		}
+
+		article {
+			.eltdf-pvli-content-holder {
+				.eltdf-pvli-image-holder {
+					.eltdf-pvli-image-inner {
+						.eltdf-pvli-image-title {
+							.eltdf-pvli-image-title-inner {
+								.eltdf-pvli-title {
+									font-size: 48px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&.next-item {
+				.eltdf-pvli-content-holder {
+					.eltdf-pvli-background-text {
+						font-size: 140px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Portfolio vertical loop shortcode responsive style - end
+   ========================================================================== */

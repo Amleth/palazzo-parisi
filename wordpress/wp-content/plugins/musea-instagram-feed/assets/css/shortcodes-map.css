@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.eltdf-instagram-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.eltdf-instagram-list-holder:not(.eltdf-il-one-column) .eltdf-il-item {
+  float: left;
+}
+
+.eltdf-instagram-list-holder .eltdf-instagram-carousel {
+  margin: 0 !important;
+}
+
+.eltdf-instagram-list-holder .eltdf-il-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=../../../../plugins/musea-instagram-feed/assets/css/shortcodes-map.css.map */

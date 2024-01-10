@@ -1,0 +1,17 @@
+2024-01-04T14:09:11+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in /var/www/html/wp-admin/includes/class-bulk-upgrader-skin.php:162
+Stack trace:
+#0 /var/www/html/wp-admin/includes/class-bulk-upgrader-skin.php(162): sprintf('%1$s installed ...', 'Tickera \xE2\x80\x93 Wor...')
+#1 /var/www/html/wp-content/themes/musea/includes/plugins/class-tgm-plugin-activation.php(3638): Bulk_Upgrader_Skin->after('Tickera \xE2\x80\x93 Wor...')
+#2 /var/www/html/wp-admin/includes/class-wp-upgrader.php(921): TGMPA_Bulk_Installer_Skin->after()
+#3 /var/www/html/wp-content/themes/musea/includes/plugins/class-tgm-plugin-activation.php(3258): WP_Upgrader->run(Array)
+#4 /var/www/html/wp-content/themes/musea/includes/plugins/class-tgm-plugin-activation.php(3363): TGMPA_Bulk_Installer->run(Array)
+#5 /var/www/html/wp-content/themes/musea/includes/plugins/class-tgm-plugin-activation.php(2977): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 /var/www/html/wp-content/themes/musea/includes/plugins/class-tgm-plugin-activation.php(743): TGMPA_List_Table->process_bulk_actions()
+#7 /var/www/html/wp-includes/class-wp-hook.php(324): TGM_Plugin_Activation->install_plugins_page('')
+#8 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /var/www/html/wp-admin/admin.php(259): do_action('appearance_page...')
+#11 /var/www/html/wp-admin/themes.php(10): require_once('/var/www/html/w...')
+#12 {main}
+  thrown dans /var/www/html/wp-admin/includes/class-bulk-upgrader-skin.php à la ligne 162
+

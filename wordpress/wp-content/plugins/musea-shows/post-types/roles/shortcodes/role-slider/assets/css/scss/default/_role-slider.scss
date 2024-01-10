@@ -1,0 +1,33 @@
+/* ==========================================================================
+# Role slider - begin
+	========================================================================== */
+
+.eltdf-role-slider-holder {
+    @include eltdfRelativeHolderLayout();
+    
+    .eltdf-rl-inner {
+        margin: 0 !important;
+    }
+    
+    .eltdf-role {
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+    .eltdf-owl-slider {
+        .owl-nav {
+            .owl-prev {
+                left: -47px;
+            }
+
+            .owl-next {
+                right: -47px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Role slider - end
+	========================================================================== */

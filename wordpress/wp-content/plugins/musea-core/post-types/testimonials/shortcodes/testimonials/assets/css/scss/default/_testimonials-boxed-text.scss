@@ -1,0 +1,115 @@
+/* ==========================================================================
+# Testimonial style - begin
+========================================================================== */
+
+.eltdf-testimonials-holder{
+
+    &.eltdf-testimonials-boxed-text{
+
+        .eltdf-border-around {
+            .eltdf-testimonial-text-inner{
+                border: 1px solid #e0e4f2;
+                width: calc(100% - 2px);
+            }
+        }
+
+        .eltdf-testimonial-text-holder {
+            position: relative;
+            display: block;
+
+            .eltdf-testimonial-text-inner {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        /* Testimonials image  styles */
+
+        .eltdf-testimonial-image{
+            text-align: center;
+            margin-top: 36px;
+            img{
+                max-width: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        .eltdf-testimonial-content-inner {
+            cursor: -webkit-grab;
+            cursor: grab;
+        }
+
+        .eltdf-testimonial-text-holder {
+
+            position: relative;
+            padding-bottom: 18px;
+            margin-bottom: 9px;
+
+            .eltdf-testimonial-text-inner {
+                text-align: left;
+                background-color: #fff;
+                padding: 0 0 25px;
+            }
+
+            .eltdf-testimonial-text {
+                margin: 0;
+                padding: 0 20px 0 25px;
+            }
+
+            .eltdf-testimonial-title {
+                margin: 0 0 16px;
+                padding: 15px 15px 15px 25px;
+                border-bottom: 1px solid #e0e4f2;
+            }
+
+        }
+
+        .eltdf-testimonial-carousel-bottom {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .eltdf-testimonial-image{
+            width: 70px;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0 20px 0 0;
+        }
+        .eltdf-testimonial-author {
+            display: table-cell;
+            vertical-align: middle;
+
+            .eltdf-testimonials-author-name,
+            .eltdf-testimonials-author-job {
+                margin: 0;
+            }
+
+            .eltdf-testimonials-author-job {
+                color: rgba($first-main-color, .4);
+            }
+        }
+    }
+
+    &.eltdf-testimonials-light {
+        .eltdf-testimonial-author {
+            .eltdf-testimonials-author-job,
+            .eltdf-testimonials-author-name {
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+//.eltdf-testimonials{
+//    visibility: hidden;
+//
+//
+//}
+
+
+/* ==========================================================================
+# Testimonial style - end
+========================================================================== */

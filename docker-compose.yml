@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  wp:
+    build: ./oliveto-php
+    container_name: wp
+    ports:
+      - 8080:80
+    restart: always
+    volumes:
+      - ./wordpress:/var/www/html
+    environment:
+      UPLOAD_LIMIT: 128M
+
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: oliveto
+      MYSQL_DATABASE: oliveto
+      MYSQL_USER: oliveto
+      MYSQL_PASSWORD: oliveto
+    ports:
+      - 3306:3306
+    restart: always
+    volumes:
+      - ./data-mysql:/var/lib/mysql

@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Interactive link showcase shortcode style - begin
+   ========================================================================== */
+
+.eltdf-ils-holder {
+    @include eltdfRelativeHolderLayout();
+    height: 100vh;
+	
+	.admin-bar & {
+		height: calc(100vh - 32px);
+	}
+	
+	&.eltdf-ils-skin-light {
+		
+		.eltdf-ils-item-link {
+			color: #fff;
+		}
+	}
+	
+	.eltdf-ils-image-holder {
+		@include eltdfRelativeHolderLayout();
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.eltdf-ils-item-image {
+		@include eltdfAbsoluteHolderLayout();
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0;
+		transition: opacity .0s .45s;
+		
+		&.eltdf-active {
+			z-index: 10;
+			opacity: 1;
+			transition: opacity .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+		}
+		
+		img {
+			display: none;
+		}
+	}
+	
+	.eltdf-ils-content-holder {
+		@include eltdfAbsoluteHolderLayout();
+		z-index: 100;
+	}
+	
+	.eltdf-ils-content-inner {
+		@include eltdfTableLayout();
+	}
+	
+	.eltdf-ils-item-content {
+		@include eltdfTableCellLayout();
+		padding: 60px 0;
+		box-sizing: border-box;
+	}
+	
+	.eltdf-ils-item-link {
+		position: relative;
+		display: block;
+		padding-right: 10%;
+		font-size: 100px;
+		line-height: 1.2em;
+		cursor: default;
+		box-sizing: border-box;
+		
+		&.eltdf-active {
+			
+			.eltdf-ils-item-title {
+				
+				&:before {
+					width: 84%;
+				}
+			}
+		}
+	}
+	
+	.eltdf-ils-item-title {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		line-height: inherit;
+		padding-left: 10%;
+		cursor: pointer;
+		z-index: 2;
+		box-sizing: border-box;
+		
+		&:hover {
+			
+			&:before {
+				width: 84%;
+			}
+		}
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: $first-main-color;
+			z-index: -1;
+			transition: width .5s ease;
+		}
+	}
+}
+/* ==========================================================================
+   Interactive link showcase shortcode style - end
+   ========================================================================== */

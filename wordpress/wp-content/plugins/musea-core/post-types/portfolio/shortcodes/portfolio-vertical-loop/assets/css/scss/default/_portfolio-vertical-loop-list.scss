@@ -1,0 +1,340 @@
+/* ==========================================================================
+   Portfolio vertical loop shortcode style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-vertical-loop-holder {
+    @include eltdfRelativeHolderLayout();
+
+	/***** Article Global Style - begin *****/
+
+    article {
+		position: relative;
+		vertical-align: middle;
+		z-index: 1; /*one after another overlapping*/
+		margin: 0 0 50px 0;
+
+	    .eltdf-pvl-item-inner {
+		    @include eltdfRelativeHolderLayout();
+	    }
+
+		&.move-up{
+			transition: transform 450ms ease 0s;
+		}
+
+		&.fade-out {
+			opacity: 0;
+			transform: scale(0.8) translate3d(0px, -10%, 0px);
+			transition: all 450ms ease 0s;
+		}
+
+		&.fade-in {
+			transition: all 450ms ease 0s;
+			opacity: 1;
+			transform: scale(1) translate3d(0px, 0px, 0px);
+		}
+
+		.eltdf-pvli-content-holder {
+			@include eltdfRelativeHolderLayout();
+
+			.eltdf-pvli-background-text {
+				display: none;
+			}
+
+			.eltdf-pvli-content-link {
+				@include eltdfAbsoluteHolderLayout();
+				z-index: -1;
+			}
+
+			.eltdf-pvli-image-holder {
+				@include eltdfRelativeHolderLayout();
+				margin: 0 0 55px;
+
+				.eltdf-pvli-image-inner {
+					position: relative;
+					height: 100%;
+
+					.eltdf-pvli-image {
+						position: relative;
+						height: 100%;
+
+						img {
+							display: block;
+						}
+					}
+
+					.eltdf-pvli-image-title {
+						position: absolute;
+						display: block;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						text-align: center;
+
+						.eltdf-pvli-image-title-inner {
+							display: block;
+
+							.eltdf-pvli-title {
+
+								color: $header-light-color;
+								text-transform: capitalize;
+								font-size: 75px;
+								line-height: 1em;
+								font-weight: 500;
+							}
+
+							.eltdf-pvli-info {
+								margin: 0;
+
+								.eltdf-pvli-category {
+									font-size: 18px;
+									color: $header-light-color;
+
+									&:hover {
+										color: $first-main-color;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.eltdf-pvli-text {
+				.eltdf-pvli-title,
+				.eltdf-pvli-info {
+					display: none;
+				}
+
+				.eltdf-pvl-info-holder {
+					@include eltdfRelativeHolderLayout();
+
+					.eltdf-pvl-info-item {
+						@include eltdfRelativeHolderLayout();
+						margin: 0 0 10px;
+
+						p, a {
+							margin: 0;
+						}
+					}
+
+					.eltdf-pvl-info-title {
+						margin: 0;
+					}
+				}
+
+				.eltdf-pvli-excerpt {
+					margin: 0 0 50px;
+				}
+
+				.eltdf-pvl-tags {
+					margin: 0;
+
+					a {
+						font-size: 19px;
+						text-transform: capitalize;
+						font-weight: 500;
+
+						&:after {
+							content: ',';
+						}
+
+						&:last-child {
+							&:after {
+								content: '';
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.next-item {
+			margin: 0 !important;
+
+			.eltdf-pvli-content-holder {
+				.eltdf-pvli-background-text {
+					position: absolute;
+					display: inline-block;
+					font-size: 229px;
+					font-weight: 700;
+					color: rgba($default-heading-color, 0.08);
+					line-height: 1em;
+					z-index: 9;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+				.eltdf-pvli-content-link {
+					z-index: 11;
+
+					.touch & {
+						cursor: pointer;
+					}
+				}
+
+				> .eltdf-pvli-text {
+					display: none;
+				}
+
+				.eltdf-pvli-image-holder {
+					margin: 0;
+					height: 300px;
+					background-color: #fff;
+
+					.eltdf-pvli-image-inner {
+
+						.eltdf-pvli-image {
+
+							img {
+								display: none;
+							}
+						}
+
+						.eltdf-pvli-image-title {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							z-index: 10;
+							display: table;
+							transition: all 0.5s ease 0s;
+							transform: none;
+
+							.eltdf-pvli-image-title-inner {
+								display: table-cell;
+								vertical-align: middle;
+								text-align: center;
+
+								.eltdf-pvli-title {
+									color: #000;
+									font-size: 35px;
+								}
+
+								.eltdf-pvli-info {
+									margin: 0;
+
+									.eltdf-pvli-category {
+										font-size: 16px;
+										color: $default-text-color;
+
+										&:hover {
+											color: $first-main-color;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+
+	/***** Article Global Style - end *****/
+
+	/***** Navigation Style - begin *****/
+
+	.eltdf-pvl-navigation-holder {
+		position: fixed;
+		top: 50%;
+		left: 0;
+		width: 500px;
+		transform: rotateZ(-90deg) translateX(-50%);
+		transform-origin: 0 0;
+		height: 78px;
+		z-index: 9;
+
+		.eltdf-pvl-navigation {
+			margin: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			position: relative;
+			display: block;
+			text-align: center;
+			width: 100%;
+			vertical-align: middle;
+			padding: 0;
+			clear: both;
+			box-sizing: border-box;
+
+			.eltdf-pvl-back-btn,
+			.eltdf-pvl-prev,
+			.eltdf-pvl-next {
+
+				a {
+					font-size: 16px;
+					font-weight: 700;
+				}
+			}
+
+			.eltdf-pvl-prev,
+			.eltdf-pvl-next {
+				position: relative;
+				vertical-align: middle;
+				padding: 0;
+				box-sizing: border-box;
+
+				a {
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+
+			.eltdf-pvl-back-btn {
+				display: inline-block;
+				vertical-align: middle;
+
+				a {
+					width: 100%;
+					position: relative;
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					vertical-align: middle;
+					cursor: pointer;
+				}
+			}
+
+			.eltdf-pvl-prev {
+				display: inline-block;
+
+				a {
+					&:after {
+						content: '';
+						display: inline-block;
+						width: 25px;
+						height: 1px;
+						background-color: $default-heading-color;
+						vertical-align: middle;
+						margin: 0 12px 0 16px;
+					}
+				}
+			}
+
+			.eltdf-pvl-next {
+				display: inline-block;
+
+				a {
+					&:before {
+						content: '';
+						display: inline-block;
+						width: 25px;
+						height: 1px;
+						background-color: $default-heading-color;
+						vertical-align: middle;
+						margin: 0 12px 0 12px;
+					}
+				}
+			}
+		}
+	}
+
+	/***** Navigation Style - end *****/
+}
+
+/* ==========================================================================
+   Portfolio vertical loop shortcode style - end
+   ========================================================================== */

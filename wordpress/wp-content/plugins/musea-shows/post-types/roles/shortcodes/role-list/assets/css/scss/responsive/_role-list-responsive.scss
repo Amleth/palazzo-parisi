@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Role list shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+    
+    .eltdf-role-list-holder {
+        
+        $gallery_columns_number: ('five');
+        
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-rl-#{nth($gallery_columns_number,$i+1)}-columns {
+                $gallery_item_size: 100% / 4;
+                
+                .eltdf-role {
+                    width: $gallery_item_size;
+                }
+                
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+                    
+                    .eltdf-role {
+                        
+                        &:nth-child(4n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+	
+	.eltdf-role-list-holder {
+
+        $gallery_columns_number: ('four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-rl-#{nth($gallery_columns_number,$i+1)}-columns {
+                $gallery_item_size: 100% / 3;
+
+                .eltdf-role {
+                    width: $gallery_item_size;
+                }
+
+                @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+                    .eltdf-role {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-portrait {
+	
+	.eltdf-role-list-holder {
+
+        $gallery_columns_number: ('three', 'four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-rl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                .eltdf-role {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    .eltdf-role {
+
+                        &:nth-child(2n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include phone-landscape {
+	
+	.eltdf-role-list-holder .eltdf-rl-inner .eltdf-role {
+		width: 100%;
+	}
+}
+/* ==========================================================================
+   Role list shortcode responsive style - end
+   ========================================================================== */

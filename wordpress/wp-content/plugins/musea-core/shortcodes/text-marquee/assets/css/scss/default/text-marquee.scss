@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Text Marquee shortcode style - begin
+   ========================================================================== */
+
+.eltdf-text-marquee {
+	display: flex;
+	white-space: nowrap;
+	color: $default-heading-color;
+	font-size: 60px;
+	font-weight: 600;
+	overflow: hidden;
+
+	.eltdf-marquee-element {
+		padding: 0 25px;
+		box-sizing: border-box;
+		will-change: transform;
+	}
+}
+/* ==========================================================================
+   Text Marquee shortcode style - end
+   ========================================================================== */

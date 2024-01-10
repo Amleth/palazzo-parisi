@@ -1,0 +1,11 @@
+.eltdf-role-single-holder {
+    .eltdf-role-info,
+    .eltdf-role-single-content{
+        @include phone-landscape{
+            display: block;
+            width: 100%;
+            border-right: 0;
+            padding: 0;
+        }
+    }
+}

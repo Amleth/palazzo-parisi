@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+.eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images {
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-image-holder.eltdf-ps-gallery-images .eltdf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-portfolio-single-holder .eltdf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio vertical loop shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  .eltdf-portfolio-vertical-loop-holder .eltdf-pvl-navigation-holder {
+    height: 34px;
+  }
+  .eltdf-portfolio-vertical-loop-holder article .eltdf-pvli-content-holder .eltdf-pvli-image-holder .eltdf-pvli-image-inner .eltdf-pvli-image-title .eltdf-pvli-image-title-inner .eltdf-pvli-title {
+    font-size: 48px;
+  }
+  .eltdf-portfolio-vertical-loop-holder article.next-item .eltdf-pvli-content-holder .eltdf-pvli-background-text {
+    font-size: 140px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio vertical loop shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .eltdf-testimonials-holder.eltdf-testimonials-image-pagination .eltdf-testimonials-image-pagination-inner {
+    padding: 0 10px 0 30%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-testimonials-holder.eltdf-testimonials-image-pagination .eltdf-testimonials-image-pagination-inner .eltdf-testimonial-text {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/musea-core/assets/css/custom-post-types-map-responsive.css.map */

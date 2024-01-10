@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Testimonials image pagination style - begin
+   ========================================================================== */
+
+.eltdf-testimonials-holder {
+
+    &.eltdf-testimonials-image-pagination {
+
+        .eltdf-testimonials-image-pagination-inner {
+            visibility: hidden;
+            position: relative;
+            display: none;
+            width: 100%;
+            margin: 0;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1;
+            padding: 0 50px 0 127px;
+            text-align: center;
+
+            .eltdf-testimonial-image {
+                @include eltdfRelativeHolderLayout();
+                margin: 25px 0 0;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .eltdf-testimonial-title {
+                margin: 0;
+                text-align: left;
+            }
+            .eltdf-testimonial-author {
+                text-align: left;
+                margin: 29px 0 0 1px;
+            }
+
+            .eltdf-testimonials-author-job {
+                margin: 0;
+                text-align: left;
+                color: $first-main-color;
+            }
+
+            .eltdf-testimonial-text {
+                margin: 19px 0 0;
+                font-size: 30px;
+                text-align: left;
+                font-style: italic;
+                font-weight: 300;
+                line-height: 42px;
+            }
+
+            .owl-stage-outer {
+                z-index: 1;
+            }
+
+            &.eltdf-slider-is-moving {
+
+                .owl-item {
+
+                    .eltdf-block-drag-link {
+                        z-index: -1 !important;
+                    }
+                }
+            }
+
+            .owl-carousel .owl-item img {
+                -webkit-transform: translateZ(0); //chrome text cut off fix
+            }
+
+            &.owl-loaded {
+                display: block;
+            }
+
+            &.owl-loading {
+                opacity: 0;
+                display: block;
+            }
+
+            &.owl-hidden {
+                opacity: 0;
+            }
+
+            &.owl-refresh .owl-item {
+                visibility: hidden;
+            }
+
+            &.owl-drag .owl-item {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            &.owl-grab {
+                cursor: move;
+                cursor: grab;
+            }
+
+            &.owl-rtl {
+                direction: rtl;
+
+                .owl-item {
+                    float: right;
+                }
+            }
+
+            /* No Js */
+            .no-js & {
+                display: block;
+            }
+
+            .owl-stage {
+                position: relative;
+                -ms-touch-action: pan-Y;
+
+                &:after {
+                    content: ".";
+                    display: block;
+                    clear: both;
+                    visibility: hidden;
+                    line-height: 0;
+                    height: 0;
+                }
+            }
+
+            .owl-stage-outer {
+                position: relative;
+                overflow: hidden;
+                /* fix for flashing background */
+                -webkit-transform: translate3d(0px, 0px, 0px);
+            }
+
+            .owl-wrapper,
+            .owl-item {
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+            }
+
+            .owl-item {
+                position: relative;
+                min-height: 1px;
+                float: left;
+                -webkit-backface-visibility: hidden;
+                -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+
+                img {
+                    display: block;
+                    width: 100%;
+
+                    .owl-lazy {
+                        transform-style: preserve-3d;
+                    }
+                }
+
+                .owl-lazy {
+                    opacity: 0;
+                    transition: opacity 400ms ease;
+                }
+            }
+
+            .owl-nav {
+
+                &.disabled {
+                    display: none;
+                }
+
+                .owl-prev,
+                .owl-next {
+                    cursor: pointer;
+                    cursor: hand;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            /*
+             *  Owl Carousel - Animate Plugin
+             */
+            .animated {
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+            }
+
+            .owl-animated-in {
+                z-index: 0;
+            }
+
+            .owl-animated-out {
+                z-index: 1;
+            }
+
+            .fadeOut {
+                animation-name: fadeOut;
+            }
+
+        }
+
+        #eltdf-testimonial-pagination {
+            list-style: none;
+            display: inline-block;
+            top: 17px;
+            left: 0;
+            position: absolute;
+            z-index: 5;
+
+            .eltdf-tsp-item {
+                position: relative;
+                display: inline-block;
+                float: left;
+                height: 35px;
+                width: 35px;
+                margin: 0 7px 7px 0;
+                cursor: pointer;
+
+                &:nth-child(2n+1) {
+                    clear: both;
+                }
+
+                img {
+                    position: relative;
+                }
+
+                &:after {
+                    content: '';
+                    @include eltdfAbsoluteHolderLayout();
+                    background-color: rgba(#000, 0.2);
+                    opacity: 1;
+                    transition: opacity .2s ease-in-out;
+                }
+
+                &.active,
+                &:hover {
+                    &:after {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            text-align: left;
+            margin-top: 3px;
+            .owl-prev,
+            .owl-next {
+                position: relative;
+                display: inline-block;
+                top: auto;
+                bottom: 0;
+                transform: translateY(0) !important;
+            }
+
+            .owl-prev {
+                left: -1px;
+            }
+            .owl-next {
+                left: 12px;
+            }
+        }
+
+        /* Light/Dark styles */
+        &.eltdf-testimonials-light {
+
+            .eltdf-testimonial-title,
+            .eltdf-testimonial-text,
+            .eltdf-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    color: #fff;
+
+                    &:hover {
+                        color: $first-main-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* ==========================================================================
+   Testimonials image pagination style - end
+   ========================================================================== */

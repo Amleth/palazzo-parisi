@@ -1,0 +1,833 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .eltdf-btn.eltdf-btn-large, .eltdf-btn.eltdf-btn-huge {
+    padding: 8px 43px 10px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  .eltdf-call-to-action-holder .eltdf-grid {
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-text-holder, .eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-text-holder {
+    width: 66.66666666666667%;
+  }
+  .eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-button-holder, .eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-button-holder {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-inner,
+  .eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-text-holder,
+  .eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-button-holder {
+    display: block;
+  }
+  .eltdf-call-to-action-holder.eltdf-normal-layout .eltdf-cta-button-holder {
+    margin: 28px 0 0;
+    text-align: initial;
+  }
+  .eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-text-holder,
+  .eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-button-holder, .eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-text-holder,
+  .eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-button-holder, .eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-text-holder,
+  .eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-button-holder, .eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-text-holder,
+  .eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-button-holder {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Call To Action shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .eltdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-countdown .countdown-row.countdown-show4 .countdown-section, .eltdf-countdown .countdown-row.countdown-show5 .countdown-section, .eltdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+  .eltdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .eltdf-custom-font-holder.eltdf-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-two-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-three-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-four-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-five-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-six-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: left;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: right;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1366.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-two-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-three-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-four-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-five-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-six-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: left;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: right;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-1024.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-two-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-three-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-four-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-five-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-six-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: left;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: right;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-768.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-two-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-three-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-four-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-five-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-six-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: left;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: right;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-680.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-two-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-three-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-four-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-five-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-six-columns .eltdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-left .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: left;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-right .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: right;
+  }
+  .eltdf-elements-holder.eltdf-responsive-mode-480.eltdf-one-column-alignment-center .eltdf-eh-item .eltdf-eh-item-content {
+    text-align: center;
+  }
+  .eltdf-elements-holder .eltdf-eh-item-content {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Frame Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .eltdf-frame-slider-holder .eltdf-fs-phone {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-frame-slider-holder {
+    padding: 74px 0;
+  }
+  .eltdf-frame-slider-holder .eltdf-fs-phone {
+    height: 100%;
+    width: 100%;
+    background-size: 100% auto;
+  }
+  .eltdf-frame-slider-holder .eltdf-fs-phone img {
+    display: inline-block;
+  }
+  .eltdf-frame-slider-holder .eltdf-fs-slides {
+    top: 13%;
+  }
+  .eltdf-frame-slider-holder .eltdf-fs-slides img {
+    display: inline-block;
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .eltdf-frame-slider-holder {
+    padding: 57px 0 66px;
+  }
+}
+
+/* ==========================================================================
+   Frame Slider shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .eltdf-full-screen-image-slider .eltdf-fsis-content-image img {
+    max-width: 440px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .eltdf-full-screen-image-slider .eltdf-fsis-slider .owl-dots {
+    bottom: calc(8% - 14px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-thumb-nav {
+    top: 16%;
+    height: 68%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-bottom {
+    height: 14%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-left,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-right {
+    width: 14%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-bottom {
+    height: 0;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-left,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-right {
+    width: 0;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-content-image img {
+    max-width: 370px;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-bottom {
+    height: 16%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-right,
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-left {
+    width: 16%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-full-screen-image-slider .eltdf-fsis-content-image img {
+    max-width: 340px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-full-screen-image-slider .eltdf-fsis-slider .owl-nav {
+    display: none;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-slider .owl-dots {
+    bottom: calc(5% - 14px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-thumb-nav {
+    display: none;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-content-image-init .eltdf-fsis-image-left {
+    left: 2%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-content-image-init .eltdf-fsis-image-right {
+    right: 5%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-content-image-init .eltdf-fsis-subtitle {
+    margin: 15px 0 0;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-image-left {
+    left: calc(2% - 10px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-image-right {
+    right: calc(5% - 10px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-bottom {
+    height: 10%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-left,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-image-hover .eltdf-fsis-frame-right {
+    width: 10%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-image-left {
+    left: calc(2% - 25px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-image-right {
+    right: calc(5% - 25px);
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-bottom {
+    height: 0;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-left,
+  .eltdf-full-screen-image-slider .eltdf-fsis-item.eltdf-fsis-active-image .eltdf-fsis-frame-right {
+    width: 0;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-top,
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-bottom {
+    height: 10%;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-right,
+  .eltdf-full-screen-image-slider .eltdf-fsis-frame-left {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-full-screen-image-slider .eltdf-fsis-slider .owl-dots {
+    display: none;
+  }
+  .eltdf-full-screen-image-slider .eltdf-fsis-content-image {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Full Screen Image Slider shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .eltdf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Horizontal Timeline shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .eltdf-horizontal-timeline .eltdf-ht-content {
+    margin-top: 50px;
+  }
+  .eltdf-horizontal-timeline .eltdf-ht-content .eltdf-hti-content-inner.eltdf-timeline-has-image > * {
+    width: 100%;
+    float: none;
+  }
+  .eltdf-horizontal-timeline .eltdf-ht-content .eltdf-hti-content-inner.eltdf-timeline-has-image .eltdf-hti-content-value {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Horizontal Timeline shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Interactive link showcase shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .eltdf-ils-holder .eltdf-ils-item-link {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .eltdf-ils-holder .eltdf-ils-item-link {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-ils-holder .eltdf-ils-item-link {
+    font-size: 54px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-ils-holder .eltdf-ils-item-link {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Interactive link showcase shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .eltdf-process-holder.eltdf-responsive-1366 .eltdf-mark-horizontal-holder {
+    display: none;
+  }
+  .eltdf-process-holder.eltdf-responsive-1366 .eltdf-mark-vertical-holder {
+    display: block;
+  }
+  .eltdf-process-holder.eltdf-responsive-1366 .eltdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-process-holder.eltdf-responsive-1366 .eltdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-process-holder.eltdf-responsive-1024 .eltdf-mark-horizontal-holder {
+    display: none;
+  }
+  .eltdf-process-holder.eltdf-responsive-1024 .eltdf-mark-vertical-holder {
+    display: block;
+  }
+  .eltdf-process-holder.eltdf-responsive-1024 .eltdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-process-holder.eltdf-responsive-1024 .eltdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-process-holder.eltdf-responsive-768 .eltdf-mark-horizontal-holder {
+    display: none;
+  }
+  .eltdf-process-holder.eltdf-responsive-768 .eltdf-mark-vertical-holder {
+    display: block;
+  }
+  .eltdf-process-holder.eltdf-responsive-768 .eltdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-process-holder.eltdf-responsive-768 .eltdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-process-holder.eltdf-responsive-680 .eltdf-mark-horizontal-holder {
+    display: none;
+  }
+  .eltdf-process-holder.eltdf-responsive-680 .eltdf-mark-vertical-holder {
+    display: block;
+  }
+  .eltdf-process-holder.eltdf-responsive-680 .eltdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-process-holder.eltdf-responsive-680 .eltdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .eltdf-process-holder.eltdf-responsive-480 .eltdf-mark-horizontal-holder {
+    display: none;
+  }
+  .eltdf-process-holder.eltdf-responsive-480 .eltdf-mark-vertical-holder {
+    display: block;
+  }
+  .eltdf-process-holder.eltdf-responsive-480 .eltdf-process-inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0 0 0 76px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .eltdf-process-holder.eltdf-responsive-480 .eltdf-process-item {
+    width: 100%;
+    float: none;
+    padding: 0;
+    text-align: inherit;
+  }
+}
+
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Roadmap shortcode style - begin
+   ========================================================================== */
+@media only screen and (max-width: 680px) {
+  .eltdf-roadmap {
+    padding-top: 100px !important;
+  }
+  .eltdf-roadmap .eltdf-roadmap-item.eltdf-roadmap-item-above .eltdf-roadmap-item-stage-title-holder {
+    top: auto;
+    bottom: 35px;
+  }
+  .eltdf-roadmap .eltdf-roadmap-item.eltdf-roadmap-item-above .eltdf-roadmap-item-content-holder {
+    top: 75px;
+    bottom: auto;
+  }
+  .eltdf-roadmap .eltdf-roadmap-item.eltdf-roadmap-item-above .eltdf-roadmap-item-content-holder:after {
+    top: auto;
+    bottom: 100%;
+  }
+}
+
+/* ==========================================================================
+   Roadmap shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .eltdf-section-title-holder {
+    padding: 0 !important;
+  }
+  .eltdf-section-title-holder.eltdf-st-disable-title-break .eltdf-st-title br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Interactive link showcase shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1440px) {
+  .eltdf-sig-holder .eltdf-sig-info {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-sig-holder .eltdf-sig-info {
+    margin-bottom: 114px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-sig-holder .eltdf-sig-image-holder,
+  .eltdf-sig-holder .eltdf-sig-info {
+    position: relative;
+    width: 100%;
+  }
+  .eltdf-sig-holder .eltdf-sig-info {
+    padding-top: 40px;
+  }
+}
+
+/* ==========================================================================
+   Interactive link showcase shortcode responsive style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+@media only screen and (max-width: 1024px) {
+  .eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li a {
+    padding: 7px 21px;
+  }
+  .eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+  .eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li a {
+    padding: 7px 18px;
+  }
+  .eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav {
+    width: 180px;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+  .eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li a {
+    width: 100%;
+  }
+  .eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+  .eltdf-tabs.eltdf-tabs-boxed .eltdf-tabs-nav li a {
+    width: 100%;
+  }
+  .eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav,
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav {
+    border-right: 0;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav {
+    padding: 0 0 20px;
+  }
+  .eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+  .eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .eltdf-workflow .eltdf-workflow-item .eltdf-workflow-item-inner .eltdf-workflow-text .eltdf-workflow-title-text-holder > h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .eltdf-workflow .main-line,
+  .eltdf-workflow .alt-line,
+  .eltdf-workflow .eltdf-workflow-item .line,
+  .eltdf-workflow .eltdf-workflow-item .eltdf-workflow-text .circle,
+  .eltdf-workflow .eltdf-workflow-item .eltdf-workflow-text .circle-line,
+  .eltdf-workflow .eltdf-workflow-item .eltdf-workflow-text .year {
+    display: none !important;
+  }
+  .eltdf-workflow .eltdf-workflow-item {
+    text-align: center !important;
+    padding-bottom: 61px !important;
+  }
+  .eltdf-workflow .eltdf-workflow-text {
+    width: 100% !important;
+    padding: 30px 10px  !important;
+  }
+  .eltdf-workflow .eltdf-workflow-image {
+    padding: 0 10px !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/musea-core/assets/css/shortcodes-map-responsive.css.map */

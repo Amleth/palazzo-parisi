@@ -1,0 +1,194 @@
+/* ==========================================================================
+   show list shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+    
+    .eltdf-show-list-holder {
+    
+        &.eltdf-pl-gallery  {
+            $gallery_columns_number: ('five');
+    
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 4;
+            
+                    .eltdf-show {
+                        width: $gallery_item_size;
+                    }
+            
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+                
+                        .eltdf-show {
+                    
+                            &:nth-child(4n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        &.eltdf-sl-masonry  {
+            $gallery_columns_number: ('five');
+    
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 4;
+            
+                    .eltdf-show,
+                    .eltdf-sl-grid-sizer {
+                        width: $gallery_item_size;
+                    }
+    
+                    .eltdf-show {
+        
+                        &.eltdf-masonry-size-large-width,
+                        &.eltdf-masonry-size-large-width-height {
+                            width: $gallery_item_size * 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+	
+	.eltdf-show-list-holder {
+        
+        &.eltdf-sl-gallery {
+            $gallery_columns_number: ('four', 'five');
+
+
+    
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 2;
+
+                    .eltdf-show {
+                        width: 50%;
+                    }
+            
+                    @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+                
+                        .eltdf-show {
+                            &:nth-child(3n) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.eltdf-sl-masonry  {
+            $gallery_columns_number: ('four', 'five');
+            
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 2;
+                    
+                    .eltdf-show,
+                    .eltdf-sl-grid-sizer {
+                        width: 50%;
+                    }
+                    
+                    .eltdf-show {
+
+                        &:nth-child(3n) {
+                            clear: both;
+                        }
+                        
+                        &.eltdf-masonry-size-large-width,
+                        &.eltdf-masonry-size-large-width-height {
+                            width: $gallery_item_size * 2;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-portrait {
+	
+	.eltdf-show-list-holder {
+        
+        &.eltdf-sl-gallery {
+            $gallery_columns_number: ('three', 'four', 'five');
+    
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+            
+                    .eltdf-show {
+                        width: 50%;
+                    }
+            
+                    @media only screen and (min-width: $phone-landscape-plus-pixel) {
+                
+                        .eltdf-show {
+                    
+                            &:nth-child(2n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.eltdf-sl-masonry  {
+            $gallery_columns_number: ('three', 'four', 'five');
+            
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    
+                    .eltdf-show,
+                    .eltdf-sl-grid-sizer {
+                        width: 50%;
+                    }
+                    
+                    .eltdf-show {
+                        
+                        &.eltdf-masonry-size-large-width,
+                        &.eltdf-masonry-size-large-width-height {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include phone-landscape {
+	
+	.eltdf-show-list-holder {
+        
+        &.eltdf-sl-gallery {
+            .eltdf-sl-inner .eltdf-show {
+                width: 100%;
+            }
+        }
+        
+        &.eltdf-sl-masonry  {
+            $gallery_columns_number: ('two', 'three', 'four', 'five');
+            
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+                    
+                    .eltdf-show,
+                    .eltdf-sl-grid-sizer {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   show list shortcode responsive style - end
+   ========================================================================== */

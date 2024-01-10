@@ -1,0 +1,214 @@
+.eltdf-event-list-holder{
+    @include laptop-landscape-large {
+    
+        &.eltdf-el-with-image {
+            $gallery_columns_number: ('five');
+    
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-el-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 4;
+    
+                    .eltdf-event-list-item {
+                        width: $gallery_item_size;
+                    }
+            
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+    
+                        .eltdf-event-list-item {
+                    
+                            &:nth-child(4n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .eltdf-eli-read-more-holder {
+
+                .eltdf-btn{
+                    padding: 17px 25px;
+                }
+            }
+        }
+        
+        &.eltdf-event-list-holder{
+            &.eltdf-event-list-item{
+            
+            }
+        }
+    }
+    
+    @include ipad-landscape {
+        &.eltdf-el-with-image {
+        
+            $gallery_columns_number: ('four', 'five');
+        
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-el-#{nth($gallery_columns_number,$i+1)}-columns {
+                    $gallery_item_size: 100% / 3;
+    
+                    .eltdf-event-list-item {
+                        width: $gallery_item_size;
+                    }
+                
+                    @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+    
+                        .eltdf-event-list-item {
+                        
+                            &:nth-child(3n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+            .eltdf-eli-read-more-holder {
+                margin-top: 37px;
+                .eltdf-btn:first-child {
+                    margin-bottom: 20px;
+                }
+                .eltdf-btn{
+                    padding: 17px 25px;
+                }
+            }
+        }
+        &.eltdf-el-simple {
+            .eltdf-event-list-holder-inner {
+                padding: 75px 0 0;
+
+                .eltdf-event-list-item {
+                    div {
+                        &.eltdf-eli-date-holder {
+                            padding-right: 25px;
+                        }
+                        &.eltdf-eli-title-holder {
+                            padding-left: 25px;
+                        }
+                        &.eltdf-eli-read-more-holder {
+                            padding-left: 25px;
+                            a{
+                                width: 100% !important;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @include ipad-portrait {
+        &.eltdf-el-with-image {
+        
+            $gallery_columns_number: ('three', 'four', 'five');
+        
+            @for $i from 0 to length($gallery_columns_number) {
+                &.eltdf-el-#{nth($gallery_columns_number,$i+1)}-columns {
+    
+                    .eltdf-event-list-item {
+                        width: 100%;
+                    }
+                
+                    @media only screen and (min-width: $phone-landscape-plus-pixel) {
+    
+                        .eltdf-event-list-item {
+                            &:nth-child(2n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+            &.eltdf-el-with-image {
+                .eltdf-eli-read-more-holder {
+                    margin-top: 37px;
+                    .eltdf-btn:first-child {
+                        margin-bottom: 0;
+                    }
+                    .eltdf-btn{
+                        padding: 17px 25px;
+                    }
+                }
+        }
+    }
+        &.eltdf-el-simple {
+            .eltdf-event-list-holder-inner {
+                padding: 50px 0;
+                .eltdf-event-list-item {
+                    display: block;
+                    width: 100%;
+                    div {
+                        display: block;
+
+                        @include ipad-portrait{
+                            text-align: center;
+                        }
+
+                        &:not(:last-child) {
+                            border-right: 0;
+                            border-bottom: 1px solid #cccccc;
+                        }
+                        &.eltdf-eli-date-holder {
+                            width: 100%;
+                            padding: 25px 0;
+                            text-align: left;
+                        }
+                        &.eltdf-eli-title-holder {
+                            width: 100%;
+                            padding: 20px 0;
+                        }
+                        &.eltdf-eli-read-more-holder {
+                            width: 25%;
+                            padding: 25px 0;
+
+                            @include ipad-portrait{
+                                margin-left: 50%;
+                                transform: translateX(-50%);
+                            }
+
+                            a.eltdf-btn {
+                                width: 100%;
+                                margin-bottom:0;
+                                &:first-child {
+                                    margin: 0 0 20px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include phone-landscape {
+        &.eltdf-el-simple {
+    
+            .eltdf-event-list-holder-inner {
+                padding: 20px 0;
+                .eltdf-event-list-item {
+
+                    div {
+                        &.eltdf-eli-date-holder {
+                            padding-right: 25px;
+                        }
+                        &.eltdf-eli-title-holder {
+                            padding-left: 0;
+                        }
+                        &.eltdf-eli-read-more-holder {
+                            width: 50%;
+                            padding: 25px 0;
+                            a.eltdf-btn {
+                                width: 100%;
+                                padding: 20px 17px;
+                                text-align: center;
+                                &:first-child {
+                                    margin: 0 0 20px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

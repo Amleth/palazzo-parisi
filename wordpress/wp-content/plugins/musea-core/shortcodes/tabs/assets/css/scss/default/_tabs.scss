@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.eltdf-tabs {
+	@include eltdfRelativeHolderLayout();
+	
+	.eltdf-tabs-nav {
+		@include eltdfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				transition: color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out;
+				@include eltdfH6();
+			}
+		}
+	}
+	
+	.eltdf-tab-container {
+        box-sizing: border-box;
+		@include eltdfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.eltdf-tabs-standard {
+		
+		.eltdf-tabs-nav {
+
+			border-bottom: 1px solid #e4e4e4;
+
+			.eltdf-tabs-line {
+				position: absolute!important;
+				left: 0;
+				top: 100%;
+				height: 0;
+				border-top: 1px solid $third-main-color;
+				transition: width .4s, left .6s cubic-bezier(0.25, 0.1, 0.11, .99);
+
+				@include phone-landscape{
+					display: none;
+				}
+			}
+			
+			li {
+				
+				a {
+					padding: 13px 34px;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			margin: 18px 0 0;
+		}
+	}
+	
+	&.eltdf-tabs-boxed {
+		
+		.eltdf-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+				
+				a {
+					padding: 7px 26px;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			margin: 25px 0 0;
+		}
+	}
+	
+	&.eltdf-tabs-simple {
+		
+		.eltdf-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				margin: 0 31px 0 0;
+				
+				a {
+					padding: 13px 0;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			padding: 31px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.eltdf-tabs-vertical {
+		display: table;
+		
+		.eltdf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			border-right: 1px solid $default-border-color;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.ui-widget-content {
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: 0;
+	border-radius: 0;
+
+    .ui-widget-header {
+	    font-size: inherit;
+	    line-height: inherit;
+	    font-weight: inherit;
+	    color: initial;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+	
+    .ui-tabs-nav {
+	    
+        li {
+	        position: initial;
+	        font-weight: inherit;
+	        color: inherit;
+	        background: initial;
+	        border: 0;
+	        border-radius: 0;
+        }
+    }
+
+    .ui-widget-content {
+	    color: inherit;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

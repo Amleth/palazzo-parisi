@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Horizontal Timeline shortcode responsive style - begin
+   ========================================================================== */
+
+@include ipad-portrait {
+	
+	.eltdf-horizontal-timeline {
+		
+		.eltdf-ht-content {
+			margin-top: 50px;
+			
+			.eltdf-hti-content-inner {
+				
+				&.eltdf-timeline-has-image {
+				
+					> * {
+						width: 100%;
+						float: none;
+					}
+					
+					.eltdf-hti-content-value {
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Horizontal Timeline shortcode responsive style - end
+   ========================================================================== */

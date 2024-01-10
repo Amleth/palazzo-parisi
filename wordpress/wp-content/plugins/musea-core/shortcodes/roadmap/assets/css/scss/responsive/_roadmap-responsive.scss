@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Roadmap shortcode style - begin
+   ========================================================================== */
+
+.eltdf-roadmap {
+	@include phone-landscape{
+		padding-top: 100px !important; //important because od the inline style
+
+		.eltdf-roadmap-item.eltdf-roadmap-item-above{
+			.eltdf-roadmap-item-stage-title-holder{
+				top: auto;
+				bottom: 35px;
+			}
+
+			.eltdf-roadmap-item-content-holder{
+				top: 75px;
+				bottom: auto;
+
+				&:after{
+					top: auto;
+					bottom: 100%;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Roadmap shortcode style - end
+   ========================================================================== */

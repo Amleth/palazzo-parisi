@@ -1,0 +1,250 @@
+.eltdf-shows-single-holder{
+    
+    .eltdf-event-section-title{
+        margin-bottom: 110px;
+
+        @include ipad-landscape{
+            margin-bottom: 55px;
+        }
+
+        .eltdf-st-caption{
+            font-size: 17px;
+        }
+    }
+    .eltdf-single-show-image-holder{
+        position: relative;
+
+        .eltdf-single-show-date{
+            position: absolute;
+            height: 160px;
+            width: 125px;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            text-align: center;
+
+            h1{
+                margin: 33px 0 0;
+                color: #e1e1e1;
+            }
+
+            h6{
+                margin: 0;
+                position: relative;
+                bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: .15em;
+            }
+        }
+    }
+
+    .eltdf-single-show-main-content{
+        margin: 62px 0 90px;
+        display: table;
+        width: 100%;
+
+        .eltdf-grid-col-9{
+            padding-left: 0;
+
+            h3{
+                margin-bottom: 11px;
+            }
+        }
+
+        .eltdf-single-show-side-content{
+            margin-top:2px;
+
+            @include ipad-landscape{
+                margin-top: 60px;
+                padding: 0;
+            }
+        }
+
+        .eltdf-single-show-description{
+
+            h2,h3,h4,h5,h6{
+                margin-top: 0;
+            }
+            .eltdf-single-show-social-share{
+                position: absolute;
+                top: 0;
+                right: 0;
+                
+                .eltdf-social-network-icon{
+                    color: #000;
+                }
+            }
+        }
+    }
+    
+    .eltdf-show-roles-holder,
+    .eltdf-show-location-holder{
+        
+        .eltdf-show-role{
+            margin: 0 0 26px;
+            
+            .eltdf-show-role-title{
+                margin: 0;
+                width: 250px;
+            }
+            
+            ul{
+                list-style: none;
+                margin: 0;
+                
+                li{
+                    p,a{
+                        margin: 5px 0;
+                    }
+                    a{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .eltdf-show-location-holder{
+        .eltdf-show-role {
+            margin: 0 0 20px;
+        }
+    }
+
+    
+    .eltdf-events-list{
+        list-style: none;
+
+        .eltdf-event-image{
+            display: inline-block;
+            width: 363px;
+            vertical-align: middle;
+
+            @include ipad-landscape{
+                width: auto;
+                padding: 0 0 30px;
+            }
+            @include phone-landscape{
+                padding: 0;
+            }
+        }
+        .eltdf-event-list-wrapper{
+            display: inline-block;
+            width: calc(100% - 444px);
+            padding-left: 78px;
+            vertical-align: middle;
+
+            @include ipad-landscape{
+                width: 100%;
+                padding-left: 0;
+                padding-top: 60px;
+            }
+        }
+        
+        .eltdf-event-list-item{
+            @include eltdfTableLayout();
+            
+            &:not(:last-child){
+                margin-bottom: 63px;
+
+                @include ipad-portrait{
+                    margin-bottom: 40px;
+                }
+                @include phone-landscape{
+                    margin-bottom: 40px;
+                }
+            }
+
+            @include ipad-portrait{
+                text-align: center;
+            }
+            
+            div{
+                @include eltdfTableCellLayout();
+                
+                &:not(:last-child){
+                    border-right: 1px solid #cccccc;
+                }
+                
+                &.eltdf-event-date{
+                    padding: 19px 48px 19px 0;
+                    text-align: center;
+                    width: 15%;
+
+                    @include laptop-landscape-mac{
+                        padding: 19px 25px 19px 0;
+                    }
+                    
+                    h2,p{
+                        margin: 0;
+                        line-height: 1em;
+                        @include ipad-portrait{
+                            text-align: center;
+                        }
+                    }
+
+                    h2{
+                        letter-spacing: .05em;
+                    }
+
+                    p{
+                        margin: 7px 0 0;
+                    }
+                }
+                
+                &.eltdf-event-title{
+                    padding: 13px 4% 0 7%;
+                    width: 65%;
+                    
+                    @include laptop-landscape-mac{
+                        padding: 0 5% 0 5%;
+                    }
+
+                    h3{
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    
+                    p{
+                        margin: 0;
+                    }
+                }
+                
+                &.eltdf-event-button-holder{
+                    width: 30%;
+                    padding-left: 63px;
+
+                    @include laptop-landscape-mac{
+                        width: 27%;
+                        padding-left: 45px;
+                    }
+
+                    a.eltdf-btn {
+                        text-align: center;
+                        padding: 11px 0;
+                        width: 100%;
+
+                        @include ipad-portrait{
+                            width: 35%;
+                        }
+                        @include phone-landscape{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tax-show-category{
+    .eltdf-show.info-bellow .eltdf-show-name{
+        min-height: 64px;
+    }
+    .eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner {
+        padding: 160px 0 153px 0;
+    }
+
+    .eltdf-show-excerpt-holder{
+        display: none;
+    }
+}

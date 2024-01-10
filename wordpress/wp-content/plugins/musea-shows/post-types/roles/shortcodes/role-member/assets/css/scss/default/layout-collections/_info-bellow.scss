@@ -1,0 +1,98 @@
+/* ==========================================================================
+# Role info bellow - begin
+	========================================================================== */
+.eltdf-role {
+	&.info-bellow {
+		
+		.eltdf-role-inner {
+			text-align: left;
+			width: 100%;
+		}
+		
+		.eltdf-role-image {
+			position: relative;
+			display: block;
+			margin: 0 auto 25px;
+			
+			a {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			img {
+				display: block;
+			}
+		}
+		
+		.eltdf-role-name {
+			line-height: 1.1em;
+			letter-spacing: 0.02em;
+			margin: 18px 0 0;
+			&:hover {
+				color: $first-main-color;
+			}
+		}
+		
+		.eltdf-role-position {
+			margin: 6px 0 0;
+			color: #737373;
+			font-weight: 300;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+		}
+		
+		.eltdf-role-social-holder-between {
+			margin: 15px 0 0;
+		}
+	}
+
+	&.eltdf-hidden-item {
+		visibility: hidden;
+
+		@include keyframes(eltdfUncoverRoleImage) {
+		    0% {
+		        @include eltdfTransform(scaleY(1));
+		    }
+
+		    100% {
+		        @include eltdfTransform(scaleY(0));
+		    }
+		}
+
+		.touch & {
+			visibility: visible;
+		}
+
+		.no-touch & {
+			visibility: visible;
+
+			.eltdf-role-image {
+				position: relative;
+			}
+	
+			.eltdf-role-image:after {
+				content :'';
+				@include eltdfAbsoluteHolderLayout();
+				height: 101%;
+				background-color: #fff;
+				z-index: 100;
+			}
+
+			&.eltdf-show-item {
+				.eltdf-role-image:after {
+					-webkit-transform-origin: 50% 100%;
+					transform-origin: 50% 100%;
+					@include eltdfAnimation(eltdfUncoverRoleImage 1s cubic-bezier(.645,.045,.355,1) forwards);
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+# Role info bellow - end
+	========================================================================== */

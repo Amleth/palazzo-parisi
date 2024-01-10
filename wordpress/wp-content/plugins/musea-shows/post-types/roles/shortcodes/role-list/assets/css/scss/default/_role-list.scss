@@ -1,0 +1,65 @@
+/* ==========================================================================
+# Role list - begin
+	========================================================================== */
+
+.eltdf-role-list-holder {
+    @include eltdfRelativeHolderLayout();
+
+    .eltdf-role {
+        @include eltdfRelativeHolderLayout();
+
+        float: left;
+        box-sizing: border-box;
+    }
+
+    /***** Role Columns - begin *****/
+
+    $role_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($role_columns_number) {
+        &.eltdf-rl-#{nth($role_columns_number,$i+1)}-columns {
+
+            .eltdf-role {
+                width: 100% / ($i+2);
+            }
+    
+            @if ($i == 3) { // set different break point for five columns
+                @media only screen and (min-width: $laptop-landscape-large-plus-pixel) {
+    
+                    .eltdf-role {
+        
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else if ($i == 2) { // set different break point for four columns
+                @media only screen and (min-width:  $ipad-landscape-plus-pixel) {
+    
+                    .eltdf-role {
+        
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+    
+                    .eltdf-role {
+        
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Role Columns - end *****/
+}
+
+/* ==========================================================================
+# Role list - end
+========================================================================== */

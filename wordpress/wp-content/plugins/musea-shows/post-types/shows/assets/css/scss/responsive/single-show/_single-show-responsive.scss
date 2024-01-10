@@ -1,0 +1,62 @@
+.eltdf-shows-single-holder{
+    @include ipad-landscape {
+        .eltdf-events-list{
+            padding: 0;
+            .eltdf-event-list-item{
+                div {
+                    &.eltdf-event-date {
+                        padding-right: 25px;
+                    }
+                    &.eltdf-event-title {
+                        padding-left: 25px;
+                    }
+                    &.eltdf-event-button-holder {
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+    @include ipad-portrait {
+        .eltdf-single-show-main-content{
+            .eltdf-single-show-side-content{
+                display: block;
+                width: 100%;
+                border: none;
+            }
+            .eltdf-single-show-description{
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+        }
+        .eltdf-events-list{
+            padding: 20px 0;
+
+            .eltdf-event-list-item{
+                display: block;
+                width: 100%;
+                div {
+                    display: block;
+                    &:not(:last-child){
+                        border-right: 0;
+                        border-bottom: 1px solid #cccccc;
+                    }
+                    &.eltdf-event-date{
+                        width: 100%;
+                        padding: 20px 0;
+                        text-align: left;
+                    }
+                    &.eltdf-event-title{
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+                    &.eltdf-event-button-holder{
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.eltdf-image-with-text-holder {
+	@include eltdfRelativeHolderLayout();
+	
+	&.eltdf-iwt-landing {
+		transform: translateY(80px);
+		opacity: 0;
+		transition: .5s;
+
+		&.eltdf-appear {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+	
+	&.eltdf-has-shadow {
+		
+		.eltdf-iwt-image {
+			box-shadow: $default-box-shadow;
+		}
+	}
+	
+	.eltdf-iwt-image {
+		@include eltdfRelativeHolderLayout();
+		
+		a, img {
+			position: relative;
+			display: block;
+		}
+	}
+	
+	.eltdf-iwt-text-holder {
+		@include eltdfRelativeHolderLayout();
+	}
+	
+	.eltdf-iwt-title {
+		margin: 32px 0 19px;
+		text-align: center;
+	}
+
+	p.eltdf-iwt-title{
+		@include title();
+		font-size: 19px;
+	}
+	
+	.eltdf-iwt-text {
+		margin: 14px 0 0;
+	}
+	
+	/***** Custom Link Behavior Style - begin *****/
+	
+	&.eltdf-image-behavior-custom-link {
+		
+		.eltdf-iwt-image {
+			
+			a {
+				@include eltdfImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Custom Link Behavior Style - end *****/
+
+	/***** Scrolling Image Behavior Style - begin *****/
+
+	&.eltdf-image-behavior-scrolling-image {
+
+		.eltdf-iwt-image-holder {
+			position: relative;
+			overflow: hidden;
+
+			.eltdf-iwt-image-holder-inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+
+				a {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					z-index: 100;
+				}
+			}
+
+			.eltdf-iwt-frame {
+				vertical-align: middle;
+			}
+		}
+
+		&.eltdf-scrolling-vertical {
+
+			.eltdf-iwt-image-holder-inner {
+
+				.main-image {
+					width: 100%;
+					// min-height: 100%;
+				}
+			}
+		}
+
+		&.eltdf-scrolling-horizontal {
+
+			.eltdf-iwt-image-holder-inner {
+
+				.main-image {
+					max-width: unset;
+					height: 100%;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	/***** Scrolling Image Behavior Style - end *****/
+	
+	/***** Lightbox Behavior Style - begin *****/
+	
+	&.eltdf-image-behavior-lightbox {
+		
+		.eltdf-iwt-image {
+			
+			a {
+				@include eltdfImageOverlayHoverStyle();
+			}
+		}
+	}
+	
+	/***** Lightbox Behavior Style - end *****/
+	
+	/***** Zoom Behavior Style - begin *****/
+	
+	&.eltdf-image-behavior-zoom {
+		
+		.eltdf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					transform: scale(1.04);
+				}
+			}
+			
+			img {
+				transform: scale(1);
+				transition: transform .3s ease-in-out;
+			}
+		}
+	}
+	
+	/***** Zoom Behavior Style - end *****/
+	
+	/***** Grayscale Behavior Style - begin *****/
+	
+	&.eltdf-image-behavior-grayscale {
+		
+		.eltdf-iwt-image {
+			overflow: hidden;
+			
+			.touch & {
+				cursor: pointer;
+			}
+			
+			&:hover {
+				
+				img {
+					-webkit-filter: grayscale(0);
+					filter: none;
+				}
+			}
+			
+			img {
+				filter: url('img/desaturate.svg#grayscale');
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				filter: gray;
+				filter: grayscale(100%);
+				transition: all .3s ease-in-out;
+			}
+		}
+	}
+	
+	/***** Grayscale Behavior Style - end *****/
+}
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

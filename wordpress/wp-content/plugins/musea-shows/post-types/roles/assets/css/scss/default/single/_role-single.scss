@@ -1,0 +1,99 @@
+.eltdf-role-single-holder {
+    @include eltdfRelativeHolderLayout();
+    padding: 48px 0 120px;
+
+    .eltdf-grid-row{
+        margin: 0 0 54px;
+
+        .eltdf-rs-title{
+            margin: 0;
+        }
+        .eltdf-rs-position{
+            margin: 5px 0 0;
+            text-transform: uppercase;
+        }
+    }
+
+    .eltdf-rs-main-info{
+        @include eltdfTableLayout();
+    }
+
+    
+   .eltdf-role-info{
+       width: 42%;
+       display: table-cell;
+       vertical-align: top;
+       position: relative;
+       padding-right: 90px;
+       box-sizing: border-box;
+       border-right: 1px solid #cccccc;
+       
+       .eltdf-rs-image-holder{
+           img{
+               display: block;
+           }
+       }
+
+       .eltdf-info-title{
+           margin: 99px 0 31px;
+       }
+
+       .eltdf-performance-list{
+           list-style: none;
+
+           li{
+               margin: 7px 0;
+
+               h6{
+                   text-transform: uppercase;
+                   letter-spacing: .15em;
+                   margin: 0;
+               }
+           }
+       }
+   }
+
+    .eltdf-role-single-content {
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+	    margin: 0;
+        width: 57%;
+        padding-left: 90px;
+
+        .eltdf-rs-contact-title{
+            margin: 0 0 34px;
+        }
+
+        .eltdf-rs-email{
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .eltdf-rs-social{
+            a{
+                i{
+                    font-size: 15px;
+                    &:hover{
+                        border: 1px solid $first-main-color;
+                        border-radius: 50%;
+                        color: $first-main-color;
+                        @include eltdfTransition(color .2s ease-out);
+                    }
+                }
+                
+            }
+            span{
+	            width: 24px;
+	            height: 24px;
+	            line-height: 24px;
+                text-align: center;
+            }
+        }
+        
+        h4{
+            margin: 0;
+        }
+    }
+}
+

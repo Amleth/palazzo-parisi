@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.eltdf-testimonials-holder {
+    
+    &.eltdf-testimonials-standard {
+        text-align: center;
+
+        .eltdf-testimonial-image {
+            @include eltdfRelativeHolderLayout();
+            margin: 25px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .owl-nav{
+            @include ipad-landscape{
+                display: none;
+            }
+
+            .owl-prev{
+                left: 10px;
+            }
+            .owl-next{
+                right: 10px;
+            }
+
+            .owl-prev,
+            .owl-next{
+                top: 42%;
+            }
+        }
+
+        .eltdf-testimonial-title {
+            margin: 0;
+        }
+
+        .eltdf-testimonial-author {
+            margin: 34px 0 7px;
+        }
+
+        .eltdf-testimonial-text {
+            margin: 19px 0 0;
+            @include title();
+        }
+
+        .eltdf-testimonials-author-job{
+            margin: 0 0 14px;
+        }
+
+        .eltdf-testimonials-quotes-holder{
+            margin-bottom: 28px;
+
+            svg{
+                padding: 0 5px;
+            }
+        }
+
+        /* Light/Dark styles */
+        &.eltdf-testimonials-light {
+            
+            .eltdf-testimonial-title,
+            .eltdf-testimonial-text,
+            .eltdf-testimonial-author {
+                color: #fff;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px){
+    .eltdf-testimonials-holder .eltdf-testimonials {
+        padding: 0 100px!important;
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

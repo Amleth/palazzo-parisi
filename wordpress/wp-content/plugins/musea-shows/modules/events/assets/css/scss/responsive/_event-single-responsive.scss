@@ -1,0 +1,99 @@
+.eltdf-event-singe-holder{
+
+    @include laptop-landscape-medium{
+        .eltdf-grid-col-8 {
+            .eltdf-shows-events-tickets-holder {
+                ul{
+                    li{
+                        > div {
+                            &.eltdf-set-title{
+                                width: 277px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-portrait{
+        .eltdf-grid-col-8 {
+            .eltdf-shows-events-tickets-holder {
+
+                ul{
+                    margin: 0;
+
+                    li{
+                        &.eltdf-se-ticket{
+                            display: block;
+                            text-align: center;
+                        }
+
+                        > div {
+                            &.eltdf-set-price {
+                                width: 100%;
+                                padding: 20px 0;
+                                text-align: left;
+                                display: block;
+                                h2{
+                                    text-align: center;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }
+                            &.eltdf-set-title {
+                                width: 100%;
+                                padding: 20px 0;
+                                display: block;
+                            }
+                            &.eltdf-set-button {
+                                width: 29%;
+                                padding: 20px 0;
+                                display: block;
+
+                                @include ipad-portrait{
+                                    margin-left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                                a.eltdf-btn {
+                                    width: 100%;
+                                    margin-bottom:0;
+                                    &:first-child {
+                                        margin: 0 0 20px 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include phone-landscape{
+        .eltdf-grid-col-8 {
+            .eltdf-shows-events-tickets-holder {
+                ul{
+                    li{
+
+                        &:not(:last-child){
+                            border-bottom: 1px solid #ccc;
+                        }
+
+                        > div {
+                            display: block;
+                            border-right: 0!important;
+                            width: 100%!important;
+                            padding-left: 0!important;
+
+                            &:last-child{
+                                padding-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

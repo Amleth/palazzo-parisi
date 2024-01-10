@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.eltdf-banner-holder {
+    @include eltdfRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	&.eltdf-visible-on-hover {
+		
+		&:hover {
+			
+			.eltdf-banner-text-holder {
+				opacity: 1;
+			}
+		}
+		
+		.eltdf-banner-text-holder {
+			opacity: 0;
+			transition: opacity .2s ease-out;
+		}
+	}
+	
+	&.eltdf-disabled {
+		
+		.eltdf-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.eltdf-banner-info-centered {
+		
+		.eltdf-banner-text-holder {
+			padding: 70px 64px;
+			text-align: center;
+
+			.eltdf-banner-text-inner{
+				vertical-align: middle;
+			}
+		}
+
+		.eltdf-banner-title{
+			padding: 17px 0;
+		}
+	}
+
+	&.eltdf-banner-info-default{
+		.eltdf-banner-caption,
+		.eltdf-banner-title{
+			width: calc(100% - 190px);
+			background-color: #fff;
+
+		}
+		.eltdf-banner-caption{
+			padding-top: 19px;
+		}
+		.eltdf-banner-title{
+			color: $third-main-color;
+			line-height: 1em;
+			padding-top: 10px;
+		}
+
+		.eltdf-banner-read-more{
+			@include readmoreStyle();
+			font-size: 17px;
+			margin-top: 19px;
+		}
+
+		.eltdf-banner-text-holder{
+			top: 55px;
+		}
+	}
+
+	&:hover {
+
+		.eltdf-banner-image img {
+			transform: scale(1.03) translateX(3px);
+		}
+	}
+	
+	.eltdf-banner-image {
+		@include eltdfRelativeHolderLayout();
+		overflow: hidden;
+		
+		img {
+			display: block;
+			transition: .5s cubic-bezier(0.3, 0.85, 0.41, 0.81);
+			backface-visibility: hidden;
+			will-change: transform;
+			transform: scale(1.02) translateX(-3px);
+		}
+	}
+	
+	.eltdf-banner-text-holder {
+		@include eltdfAbsoluteHolderLayout();
+		padding: 0;
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 20px!important;
+		}
+	}
+	
+	.eltdf-banner-text-outer {
+		@include eltdfTableLayout();
+	}
+	
+	.eltdf-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: bottom;
+	}
+	
+	.eltdf-banner-subtitle {
+		margin: 0 0 4px;
+		color: #fff;
+	}
+
+	.eltdf-banner-caption{
+		@include title();
+	}
+	
+	.eltdf-banner-title {
+		margin: 0;
+		color: $third-main-color;
+		background-color: #fff;
+
+		
+		.eltdf-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.eltdf-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		transform: translateZ(0);
+		
+		&:hover {
+			
+			.eltdf-banner-link-hover {
+				width: 100%;
+			}
+		}
+		
+		.eltdf-banner-link-original {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			
+			span {
+				color: inherit;
+			}
+		}
+		
+		.eltdf-banner-link-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			overflow: hidden;
+			transition: width .4s ease-in-out;
+			
+			span {
+				color: $first-main-color;
+			}
+		}
+		
+		.eltdf-banner-link-icon,
+		.eltdf-banner-link-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.eltdf-banner-link-icon {
+			margin: 0 2px 0 0;
+			font-size: 15px;
+		}
+		
+		.eltdf-banner-link-label {
+
+		}
+	}
+
+	.eltdf-banner-link {
+		@include eltdfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

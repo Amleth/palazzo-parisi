@@ -1,0 +1,79 @@
+1.5
+- Added WordPress 6.1.1 compatibility
+- Added WooCommerce 7.2.2 compatibility
+- Added PHP8 compatibility
+- Added Enable/Disable Google Fonts option and functionality
+- Updated Musea Core plugin to 1.0.5
+- Updated Musea Shows plugin to 1.0.4
+- Updated Musea Instagram Feed plugin to 2.0.3
+- Updated Musea Twitter Feed plugin to 1.0.2
+- Updated WPBakery Page Builder plugin to 6.10.0
+- Updated Musea Child theme to 1.0.1
+- Updated Revolution Slider plugin to 6.6.8
+- Fixed Top bar displaying on archive pages
+- Fixed the issue of all show items displaying on show category pages
+- Fixed child theme CSS priority
+- Fixed Gutenberg meta boxes style
+- Fixed featured products view for Product List Simple shortcode
+- Fixed fullscreen search scrolling
+- Fixed Simple line icons version
+- Fixed countdown year span
+- Fixed cart widgets in WordPress 5.8
+- Fixed WooCommerce quantity input fields NaN value
+- Fixed creation of the Custom Sidebars in new Widgets layout
+- Fixed 'Bulk Select' functionality with Menus
+- Fixed potential security issue
+- Fixed Musea preloader not working properly on Firefox
+- Improved time span calculation for events assigned to Musea shows
+- Improved import for PHP8
+- Improved escaping on video blog single type
+- Improved social share
+- Improved newsletter contact form display
+- Removed Instagram business social login
+
+1.4.1
+- Fixed activation of Tickera plugin
+
+1.4
+- Added WordPress 5.7 compatibility
+- Updated Musea Core plugin to 1.0.4
+- Updated Musea Shows plugin to 1.0.3
+- Updated Musea Instagram Feed plugin to 2.0.2
+- Updated Musea Twitter Feed plugin to 1.0.1
+- Updated WPBakery page builder to 6.6.0
+- Updated Revolution Slider plugin to 6.4.6
+- Fixed icons path for Musea Shows shortcodes
+- Fixed portfolio list Click Behavior
+- Fixed lightbox navigation arrows
+- Fixed social share empty image notice
+- Fixed Musea Shows text domain in few places
+- Fixed Show Related Posts option
+- Fixed Top Bar option for Singe Show Item
+- Improved PHP 8 compatibility
+- Removed unused file instagram-redirect.php from Musea Core Instagram Widget plugin
+- Removed unused file twitter-redirect.php from Musea Core Twitter Feed plugin
+
+1.3
+- Updated Musea Instagram Feed to 2.0.1
+- Updated WPBakery page builder to 6.4.1
+- Fixed Instagram feed for business accounts
+
+1.2
+- Updated Musea Core plugin to 1.0.3
+- Updated Musea Instagram Feed to 2.0
+- Updated Musea Shows plugin to 1.0.2
+- Updated WPBakery page builder to 6.4.0
+- Updated Revolution Slider plugin to 6.2.23
+
+1.1
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.4.1 compatibility
+- Updated Musea Core plugin to 1.0.2
+- Updated Musea Shows plugin to 1.0.1
+- Updated WPBakery page builder to 6.3.0
+- Updated Revolution Slider plugin to 6.2.22
+- Updated language files
+
+1.0.1
+- Updated Musea Core to 1.0.1
+- Fixed single portfolio registration

@@ -1,0 +1,149 @@
+/* ==========================================================================
+# Role slider - begin
+	========================================================================== */
+
+.eltdf-show-slider-holder {
+    @include eltdfRelativeHolderLayout();
+
+    .owl-item {
+        -webkit-clip-path: inset(0 0 100% 0);
+		clip-path: inset(0 0 100% 0);
+        transition: 1.2s cubic-bezier(0.63, 0.25, 0.25, 1);
+
+        @for $i from 2 to 30 {
+			
+			&:nth-child(#{$i}) {
+                transition-delay: #{.05 * ($i - 1)}s;
+                
+                .eltdf-show-info {
+                    transition-delay: #{.05 * ($i - 1) + .4}s;
+                }
+			}
+		}
+
+        .eltdf-show-info {
+            -webkit-clip-path: inset(100% 0 0 0);
+		    clip-path: inset(100% 0 0 0);
+            transition: .7s;
+            will-change: transform;
+        }
+    }
+
+    &.eltdf-appear {
+        
+        .owl-item {
+            -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+        }
+
+        .eltdf-show-info {
+            -webkit-clip-path: inset(0 0 0 0);
+		    clip-path: inset(0 0 0 0);
+        }
+    }
+    
+    .eltdf-sl-inner {
+        margin: 0 !important;
+    }
+    
+    .eltdf-show {
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        float: none !important;
+
+        &.info-bellow{
+            .eltdf-event-post-read-more-button{
+                margin: 29px 0 25px;
+            }
+        }
+    }
+
+    .eltdf-owl-slider {
+
+        .owl-item:nth-child(even){
+            top: 30px;
+        }
+
+        .owl-stage-outer{
+            padding: 0 0 22px;
+        }
+
+        .owl-dots{
+            margin: 40px 0 0;
+
+            @include phone-landscape{
+                display: none;
+            }
+        }
+
+        .owl-dots.disabled,
+        .owl-nav.disabled{
+            display: block;
+        }
+
+        .owl-nav {
+
+            @include phone-landscape{
+                display: none;
+            }
+
+            .owl-prev,
+            .owl-next{
+                top: 39.5%;
+            }
+
+            .owl-prev {
+                left: -115px;
+
+                @include laptop-landscape-large{
+                    left: -40px;
+                }
+                @include laptop-landscape-mac{
+                    left: -86px;
+                }
+                @include laptop-landscape-medium{
+                    left: -48px;
+                }
+                @include ipad-landscape{
+                    left: -73px;
+                }
+                @include ipad-portrait{
+                    left: -50px;
+                }
+
+                i {
+                    color: #000000;
+                }
+            }
+
+            .owl-next {
+                right: -115px;
+
+                @include laptop-landscape-large{
+                    right: -40px;
+                }
+                @include laptop-landscape-mac{
+                    right: -86px;
+                }
+                @include laptop-landscape-medium{
+                    right: -48px;
+                }
+                @include ipad-landscape{
+                    right: -73px;
+                }
+                @include ipad-portrait{
+                    right: -50px;
+                }
+
+                i {
+                    color:#000000;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Role slider - end
+	========================================================================== */

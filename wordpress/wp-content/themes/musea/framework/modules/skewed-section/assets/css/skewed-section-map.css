@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Skew Section styles - begin
+   ========================================================================== */
+/* ==========================================================================
+# Skewed Section style - begin
+========================================================================== */
+.eltdf-has-skewed-section-effect {
+  position: relative;
+  z-index: 100;
+}
+
+.eltdf-skewed-section-effect > svg {
+  vertical-align: middle;
+}
+
+.eltdf-skewed-section-effect > svg > * {
+  fill: currentColor;
+}
+
+.eltdf-top-skewed-section-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  -webkit-transform: rotate(-180deg) translateY(99%);
+  -ms-transform: rotate(-180deg) translateY(99%);
+  transform: rotate(-180deg) translateY(99%);
+}
+
+.eltdf-bottom-skewed-section-effect,
+.eltdf-header-skewed-section-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  -webkit-transform: translateY(99%);
+  -ms-transform: translateY(99%);
+  transform: translateY(99%);
+}
+
+.eltdf-title-skewed-section-effect {
+  position: relative;
+}
+
+.eltdf-title-skewed-section-effect.eltdf-title-inset-section-effect {
+  z-index: 101;
+  -webkit-transform: rotate(180deg) translateY(100%);
+  -ms-transform: rotate(180deg) translateY(100%);
+  transform: rotate(180deg) translateY(100%);
+}
+
+/* ==========================================================================
+# Skewed Section style - end
+========================================================================== */
+/* ==========================================================================
+   Skew Section styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=skewed-section-map.css.map */

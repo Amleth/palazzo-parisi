@@ -1,0 +1,825 @@
+/* ==========================================================================
+   Search styles - begin
+   ========================================================================== */
+/* ==========================================================================
+# Search opener - begin
+========================================================================== */
+.eltdf-search-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 1;
+  margin: 0 10px;
+}
+
+.eltdf-search-opener .eltdf-search-opener-wrapper {
+  display: block;
+}
+
+.eltdf-search-opener .eltdf-search-opener-wrapper svg {
+  stroke-width: 1.3px;
+}
+
+.eltdf-search-opener .eltdf-search-opener-wrapper svg circle,
+.eltdf-search-opener .eltdf-search-opener-wrapper svg line {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.eltdf-search-opener .eltdf-search-opener-wrapper > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.eltdf-search-opener .eltdf-search-opener-wrapper > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-search-opener.eltdf-search-opener-svg-path .eltdf-search-opener-wrapper > * {
+  vertical-align: middle;
+}
+
+.eltdf-search-opener.eltdf-search-opener-svg-path .eltdf-search-opener-wrapper > *,
+.eltdf-search-opener.eltdf-search-opener-svg-path .eltdf-search-opener-wrapper path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener,
+.eltdf-light-header .eltdf-top-bar .eltdf-search-opener {
+  color: #fff !important;
+}
+
+.eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener:hover,
+.eltdf-light-header .eltdf-top-bar .eltdf-search-opener:hover {
+  color: #c9ab81 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener {
+  color: #383838 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener:hover,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover {
+  color: #c9ab81 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener:hover svg circle,
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header):not(.fixed) .eltdf-search-opener:hover svg line,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover svg circle,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover svg line {
+  stroke: #c9ab81 !important;
+}
+
+/* For fixed header */
+.eltdf-light-header .eltdf-page-header > div:not(.eltdf-sticky-header) .eltdf-search-opener:hover,
+.eltdf-light-header .eltdf-top-bar .eltdf-search-opener:hover {
+  color: #c9ab81 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header) .eltdf-search-opener:hover,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover {
+  color: #c9ab81 !important;
+}
+
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header) .eltdf-search-opener:hover svg circle,
+.eltdf-dark-header .eltdf-page-header > div:not(.eltdf-sticky-header) .eltdf-search-opener:hover svg line,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover svg circle,
+.eltdf-dark-header .eltdf-top-bar .eltdf-search-opener:hover svg line {
+  stroke: #c9ab81 !important;
+}
+
+/* Fixed end */
+.eltdf-fullscreen-search-with-passepartout.admin-bar .eltdf-fullscreen-search-holder.eltdf-animate {
+  padding: 65px 35px 35px 35px !important;
+}
+
+/* ==========================================================================
+# Search opener - end
+========================================================================== */
+/* ==========================================================================
+# Search template style - begin
+========================================================================== */
+.eltdf-search-page-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 80px;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-search-title {
+  margin: 0 0 20px;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-search-label {
+  display: block;
+  font-size: 13px;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  clear: both;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-column-left {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-column-right {
+  display: table-cell;
+  width: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-field {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 20px 0 3px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-field::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-field:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-field::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-field:-ms-input-placeholder {
+  color: inherit;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-submit {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: 6px !important;
+  line-height: 40px;
+  padding: 0;
+  font-size: 18px;
+  color: #5f5f5f;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+.eltdf-search-page-holder .eltdf-search-page-form .eltdf-form-holder .eltdf-search-submit:hover {
+  color: #383838;
+}
+
+.eltdf-search-page-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 30px 0;
+  margin: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.eltdf-search-page-holder article.sticky .eltdf-post-title a {
+  color: #c9ab81;
+}
+
+.eltdf-search-page-holder article.page .eltdf-post-title-area .eltdf-post-info > div.eltdf-post-info-category {
+  display: none;
+}
+
+.eltdf-search-page-holder article .eltdf-post-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-search-page-holder article .eltdf-post-image {
+  display: block;
+  float: left;
+  width: 130px;
+}
+
+.eltdf-search-page-holder article .eltdf-post-image a, .eltdf-search-page-holder article .eltdf-post-image img {
+  display: block;
+}
+
+.eltdf-search-page-holder article .eltdf-post-title-area {
+  min-height: 130px;
+  padding: 0 0 0 150px;
+}
+
+.eltdf-search-page-holder article .eltdf-post-title-area.eltdf-no-thumbnail {
+  padding: 0;
+  min-height: inherit;
+}
+
+.eltdf-search-page-holder article .eltdf-post-title-area .eltdf-post-title-area-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-search-page-holder article .eltdf-post-title-area .eltdf-post-title-area-inner .eltdf-post-title {
+  margin: 0;
+}
+
+.eltdf-search-page-holder article .eltdf-post-title-area .eltdf-post-title-area-inner .eltdf-post-excerpt {
+  margin: 7px 0 0;
+}
+
+.eltdf-search-page-holder .eltdf-blog-pagination {
+  margin: 50px 0 0;
+}
+
+/* ==========================================================================
+# Search template style - end
+========================================================================== */
+/* ==========================================================================
+# Search covers header - start
+========================================================================== */
+.eltdf-search-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  background-color: #383838;
+  z-index: 115;
+}
+
+.eltdf-search-cover.eltdf-opener-in-top-header {
+  top: auto;
+  bottom: 100%;
+}
+
+.eltdf-search-cover .eltdf-container,
+.eltdf-search-cover .eltdf-container-inner {
+  height: 100%;
+}
+
+.eltdf-fixed-header-appear .eltdf-search-cover,
+.eltdf-sticky-header-appear .eltdf-search-cover,
+.eltdf-mobile-header.mobile-header-appear .eltdf-search-cover {
+  position: fixed;
+}
+
+.eltdf-fixed-header-appear.admin-bar .eltdf-search-cover,
+.eltdf-sticky-header-appear.admin-bar .eltdf-search-cover,
+.admin-bar .eltdf-mobile-header.mobile-header-appear .eltdf-search-cover {
+  top: 32px;
+}
+
+.eltdf-search-cover .eltdf-form-holder-outer {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.eltdf-search-cover .eltdf-form-holder {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 40px;
+}
+
+.eltdf-search-cover .eltdf-form-holder-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-search-cover .eltdf-container-inner .eltdf-form-holder {
+  padding: 0;
+}
+
+.eltdf-search-cover .eltdf-container-inner .eltdf-search-close {
+  right: 0;
+}
+
+.eltdf-search-cover input {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  outline-offset: 0;
+}
+
+.eltdf-search-cover input:focus {
+  color: inherit;
+}
+
+.eltdf-search-cover input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.eltdf-search-cover input:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.eltdf-search-cover input::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.eltdf-search-cover input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.eltdf-search-cover input[type="submit"] {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  visibility: hidden;
+}
+
+.eltdf-search-cover .eltdf-search-close {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-search-cover .eltdf-search-close:hover {
+  color: #c9ab81;
+}
+
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-icon-pack {
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-svg-path > *,
+.eltdf-search-cover .eltdf-search-close.eltdf-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.eltdf-search-cover.disabled input,
+.eltdf-search-cover.disabled input:focus {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+# Search covers header - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - start
+========================================================================== */
+/* Fullscreen search general style - start
+========================================================================== */
+.eltdf-fullscreen-search-opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.eltdf-fullscreen-search-opened.admin-bar {
+  top: 32px;
+  height: calc(100% - 32px);
+}
+
+.eltdf-fullscreen-search-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 105;
+  opacity: 0;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-fullscreen-search-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-fullscreen-search-cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  pointer-events: none;
+  cursor: none;
+}
+
+.eltdf-fullscreen-search-opened .eltdf-fullscreen-search-holder .eltdf-fullscreen-search-cover {
+  pointer-events: all;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-fullscreen-search-inner {
+  position: relative;
+  z-index: 1256;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-fullscreen-search-cell {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-form-holder-inner {
+  position: relative;
+  width: 30%;
+  margin: auto;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-form-holder-inner .eltdf-line {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  border-bottom: 1px solid #e1e1e1;
+  -webkit-transition: all .3s .2s;
+  -o-transition: all .3s .2s;
+  transition: all .3s .2s;
+}
+
+.eltdf-fullscreen-search-opened .eltdf-fullscreen-search-holder .eltdf-form-holder-inner .eltdf-line {
+  width: 100%;
+  -webkit-transition: width 0.5s cubic-bezier(0.63, 0.38, 0.25, 1) 0.2s;
+  -o-transition: width 0.5s cubic-bezier(0.63, 0.38, 0.25, 1) 0.2s;
+  transition: width 0.5s cubic-bezier(0.63, 0.38, 0.25, 1) 0.2s;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-field-holder {
+  display: block;
+  position: relative;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond";
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.47em;
+  letter-spacing: 0;
+  color: #c9ab81;
+  color: #a4a4a4;
+  font-size: 21px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field > a {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field:focus {
+  color: #a4a4a4;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field::-webkit-input-placeholder {
+  background-color: transparent;
+  font-family: "EB Garamond";
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.47em;
+  letter-spacing: 0;
+  color: #c9ab81;
+  color: #a4a4a4;
+  font-size: 21px;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field::-webkit-input-placeholder > a {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field:-moz-placeholder {
+  background-color: transparent;
+  font-family: "EB Garamond";
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.47em;
+  letter-spacing: 0;
+  color: #c9ab81;
+  color: #a4a4a4;
+  font-size: 21px;
+  opacity: 1;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field:-moz-placeholder > a {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field::-moz-placeholder {
+  background-color: transparent;
+  font-family: "EB Garamond";
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.47em;
+  letter-spacing: 0;
+  color: #c9ab81;
+  color: #a4a4a4;
+  font-size: 21px;
+  opacity: 1;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field::-moz-placeholder > a {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field:-ms-input-placeholder {
+  background-color: transparent;
+  font-family: "EB Garamond";
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.47em;
+  letter-spacing: 0;
+  color: #c9ab81;
+  color: #a4a4a4;
+  font-size: 21px;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-field:-ms-input-placeholder > a {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-submit {
+  position: absolute;
+  right: 0;
+  bottom: 6px !important;
+  width: auto;
+  color: #5f5f5f;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s .2s;
+  -o-transition: all .3s .2s;
+  transition: all .3s .2s;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-submit:hover {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-opened .eltdf-fullscreen-search-holder .eltdf-search-submit {
+  opacity: 1;
+  bottom: 40px;
+  -webkit-transition: color .2s ease,opacity .4s ease-out .6s,bottom .3s ease-out .2s;
+  -o-transition: color .2s ease,opacity .4s ease-out .6s,bottom .3s ease-out .2s;
+  transition: color .2s ease,opacity .4s ease-out .6s,bottom .3s ease-out .2s;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-submit.eltdf-search-submit-icon-pack {
+  font-size: 18px;
+  line-height: 1em;
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotateZ(-90deg);
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-submit.eltdf-search-submit-svg-path > *,
+.eltdf-fullscreen-search-holder .eltdf-search-submit.eltdf-search-submit-svg-path path {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close {
+  position: absolute;
+  top: 78px;
+  right: 84px;
+  color: #5f5f5f;
+  opacity: 0;
+  visibility: hidden !important;
+  z-index: 1;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close svg svg line {
+  fill: transparent;
+  stroke: #525252;
+}
+
+.admin-bar .eltdf-fullscreen-search-holder .eltdf-search-close {
+  top: 72px;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close:hover {
+  color: #c9ab81;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-icon-pack {
+  font-size: 25px;
+  line-height: 1em;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-icon-pack * {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-icon-pack *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-svg-path > * {
+  vertical-align: middle;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-svg-path > *,
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-svg-path path {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.eltdf-fullscreen-search-holder .eltdf-search-close.eltdf-search-close-svg-path:hover path {
+  stroke: #c9ab81;
+}
+
+/* Fullscreen search general style - end
+========================================================================== */
+/* Fullscreen search fade style - start
+========================================================================== */
+.eltdf-search-fade .eltdf-fullscreen-search-holder {
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  z-index: 112;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.eltdf-search-fade .eltdf-fullscreen-search-holder .eltdf-fullscreen-search-table {
+  background-color: white;
+}
+
+.eltdf-search-fade.eltdf-fs-search-has-bckgr:not(.eltdf-fullscreen-search-with-passepartout) .eltdf-fullscreen-search-holder .eltdf-fullscreen-search-table {
+  background-color: transparent;
+}
+
+.eltdf-search-fade-out.eltdf-search-fade .eltdf-fullscreen-search-holder {
+  -webkit-animation: search_fade_out .2s ease-out both;
+  animation: search_fade_out .2s ease-out both;
+}
+
+.eltdf-search-fade-in.eltdf-search-fade .eltdf-fullscreen-search-holder.eltdf-animate {
+  -webkit-animation: search_fade_in .3s ease both;
+  animation: search_fade_in .3s ease both;
+}
+
+.eltdf-search-fade .eltdf-fullscreen-search-holder.eltdf-animate .eltdf-search-close {
+  opacity: 1;
+  visibility: visible;
+}
+
+@-webkit-keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes search_fade_out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes search_fade_in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Fullscreen search fade style - end
+========================================================================== */
+/* ==========================================================================
+# Fullscreen search - end
+========================================================================== */
+/* ==========================================================================
+   Search styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map.css.map */

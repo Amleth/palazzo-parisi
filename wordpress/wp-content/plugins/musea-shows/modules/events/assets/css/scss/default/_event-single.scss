@@ -1,0 +1,161 @@
+.eltdf-event-singe-holder{
+    .eltdf-grid-col-4{
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        width: 31%;
+
+        @include ipad-landscape{
+            width: 100%;
+        }
+
+        .eltdf-event-single-image-holder{
+            position: relative;
+
+            .eltdf-event-single-image{
+
+                @include ipad-landscape{
+                    padding: 0 0 30px;
+                }
+                @include phone-landscape{
+                    padding: 0;
+                }
+
+                img{
+                    display: block;
+                    width: 363px;
+                }
+            }
+
+            .eltdf-event-single-date-separated{
+                position: absolute;
+                height: 160px;
+                width: 125px;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                text-align: center;
+
+                h1{
+                    margin: 33px 0 0;
+                    color: $first-main-color;
+                }
+
+                h6{
+                    margin: 0;
+                    position: relative;
+                    bottom: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: .15em;
+                }
+            }
+        }
+    }
+
+    .eltdf-grid-col-8{
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        width: 68%;
+        padding: 0;
+
+        @include ipad-landscape{
+            width: 100%;
+        }
+
+        .eltdf-shows-events-tickets-holder{
+
+            ul{
+                list-style: none;
+                margin-left: 30px;
+
+                li{
+                    margin: 40px 0;
+                    display: table;
+                    width: 100%;
+
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+
+                    > div{
+                        display: table-cell;
+                        vertical-align: middle;
+                        > * {
+                            margin: 0;
+                        }
+
+                        &:not(:last-child){
+                            border-right: 1px solid #cccccc;
+
+                            @include ipad-portrait{
+                                border-bottom: 1px solid #cccccc;
+                                border-right: none;
+                            }
+                        }
+
+                        &.eltdf-set-price{
+                            width: 131px;
+                            > *{
+                                color: $first-main-color;
+                                padding: 25px 15px 25px 0;
+                            }
+                        }
+
+                        &.eltdf-set-title{
+                            padding-left: 34px;
+                            width: 485px;
+
+                            @include laptop-landscape-mac{
+                                width: 277px;
+                            }
+
+                            h4{
+                                @include eltdfH3();
+                            }
+                        }
+
+                        &.eltdf-set-button{
+                            padding-left: 34px;
+
+                            > span{
+                                font-size: 0;
+                            }
+
+                            a{
+                                @include eltdfButtonDefaultStyle();
+                                @include eltdfButtonOutlineColor();
+                                @include eltdfButtonSize(medium);
+                                padding: 8px 48px 10px;
+
+                                &:hover {
+                                    @include eltdfButtonOutlineHoverColor();
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .eltdf-single-event-content{
+        .tc_the_content_pre{
+            display: none;
+        }
+
+        .tc_warning_ticket_types_needed{
+            display: none;
+        }
+    }
+    
+    .tc_in_cart {
+        a {
+            padding: 12px 62px!important;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+/* ==========================================================================
+# Show list - begin
+	========================================================================== */
+
+.eltdf-show-list-holder {
+    @include eltdfRelativeHolderLayout();
+
+    .eltdf-show {
+        @include eltdfRelativeHolderLayout();
+        box-sizing: border-box;
+    }
+    
+    /***** Show Types - begin *****/
+    
+    &.eltdf-sl-gallery {
+        
+        &:not(.eltdf-sl-one-column) {
+            
+            .eltdf-show {
+                float: left;
+            }
+        }
+        
+        $gallery_columns_number: ('two', 'three', 'four', 'five');
+        
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-sl-#{nth($gallery_columns_number,$i+1)}-columns {
+    
+                .eltdf-show {
+                    width: 100% / ($i+2);
+
+                    &.info-bellow{
+                        .eltdf-show-categories-holder{
+                            padding: 21px 0 0;
+                        }
+                        .eltdf-show-name{
+                            margin: 1px 0 0;
+                        }
+                    }
+                }
+                
+                @if ($i == 3) { // set different break point for five columns
+                    @media only screen and (min-width: $laptop-landscape-large-plus-pixel) {
+    
+                        .eltdf-show {
+                            
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else if ($i == 2) { // set different break point for four columns
+                    @media only screen and (min-width:  $ipad-landscape-plus-pixel) {
+    
+                        .eltdf-show {
+                            
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                } @else {
+                    @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+    
+                        .eltdf-show {
+                            
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.eltdf-sl-three-columns,
+        &.eltdf-sl-four-columns,
+        &.eltdf-sl-five-columns{
+            .eltdf-show.info-bellow{
+
+                .eltdf-show-name{
+                    margin: 7px 0 0;
+                }
+            }
+        }
+    }
+    
+    &.eltdf-sl-masonry {
+        
+        .eltdf-sl-inner {
+            opacity: 0;
+        }
+    
+        .eltdf-show,
+        .eltdf-sl-grid-sizer {
+            width: 100%;
+        }
+        
+        .eltdf-sl-grid-gutter {
+            width: 0;
+        }
+        
+        $masonry_columns_number: ('two', 'three', 'four', 'five');
+        
+        @for $i from 0 to length($masonry_columns_number) {
+            &.eltdf-sl-#{nth($masonry_columns_number,$i+1)}-columns {
+                $column_width: 100%/($i+2);
+    
+                .eltdf-show,
+                .eltdf-sl-grid-sizer {
+                    width: $column_width;
+                }
+    
+                .eltdf-show {
+                    
+                    &.eltdf-masonry-size-large-width,
+                    &.eltdf-masonry-size-large-width-height {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+        }
+        
+        &.eltdf-masonry-images-fixed {
+    
+            .eltdf-show {
+                
+                .eltdf-sl-item-inner {
+                    height: 100%;
+                }
+                
+                .eltdf-show-image {
+                    height: 100%;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.eltdf-normal-space .eltdf-outer-space .eltdf-item-space{
+        margin: 0;
+    }
+    
+    /***** Show Types - end *****/
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+
+.eltdf-show-list-holder {
+    
+    &.eltdf-sl-pag-standard {
+        
+        .eltdf-sl-inner {
+            opacity: 1;
+            @include eltdfTransition(opacity .2s ease-out);
+        }
+        
+        &.eltdf-sl-pag-standard-animate {
+            
+            .eltdf-sl-inner {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.eltdf-sl-standard-pagination {
+    @include eltdfRelativeHolderLayout();
+    margin: 20px 0 0;
+    clear: both;
+    
+    ul {
+        @include eltdfRelativeHolderLayout();
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 12px;
+            padding: 0;
+            
+            a {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                padding: 0;
+            }
+            
+            &.eltdf-sl-pag-active {
+                
+                a {
+                    color: $first-main-color;
+                }
+            }
+            
+            &.eltdf-sl-pag-prev,
+            &.eltdf-sl-pag-next {
+                position: absolute;
+                top: 0;
+                
+                a {
+                    font-size: 30px;
+                    @include eltdfTransition(color .2s ease-out, opacity .2s ease-out);
+                    
+                    span {
+                        display: block;
+                        line-height: inherit;
+                        
+                        &:before {
+                            display: block;
+                            line-height: inherit;
+                        }
+                    }
+                }
+            }
+            
+            &.eltdf-sl-pag-prev {
+                left: 0;
+                
+                a {
+                    opacity: 0;
+                }
+            }
+            
+            &.eltdf-sl-pag-next {
+                right: 0;
+                
+                a {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Shows standard pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Shows load more pagination style - begin
+   ========================================================================== */
+
+.eltdf-sl-load-more-holder {
+    @include eltdfRelativeHolderLayout();
+    
+    .eltdf-sl-load-more {
+        margin: 0;
+        text-align: center;
+
+    }
+}
+/* ==========================================================================
+   Shows load more pagination style - end
+   ========================================================================== */
+
+/* ==========================================================================
+# Show list - end
+========================================================================== */

@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+
+.eltdf-social-share-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	
+	.eltdf-social-title {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 13px;
+		@include eltdfH6();
+		font-size: 17px;
+		color: $third-main-color;
+	}
+	
+	ul {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	li {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0;
+		margin: 0;
+		
+		a {
+			font-size: 12px;
+
+			&:hover{
+				color: $first-main-color;
+			}
+		}
+	}
+	
+	&.eltdf-list {
+		
+		li {
+			margin-right: 21px;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	&.eltdf-text {
+		
+		li {
+			margin-right: 13px;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	$socialShareWidth: 90px;
+	$socialShareHeight: 30px;
+	
+	&.eltdf-dropdown {
+		position: relative;
+		display: inline-block;
+		vertical-align: bottom;
+		
+		&:hover {
+			
+			.eltdf-social-share-dropdown ul li {
+				opacity: 1;
+				visibility: visible;
+				cursor: pointer;
+				
+				/* opacity and visibility need to be different, but not background-color */
+				@for $i from 2 through 7 {
+					&:nth-child(#{$i}) {
+						$transition-delay: #{($i)/10+s};
+						
+						-webkit-transition-delay: $transition-delay;
+						-moz-transition-delay: $transition-delay;
+						transition-delay: $transition-delay;
+					}
+				}
+			}
+		}
+		
+		.eltdf-social-share-dropdown-opener {
+			display: block;
+			
+			.eltdf-social-share-title {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 5px;
+			}
+		}
+		
+		.eltdf-social-share-dropdown {
+			position: absolute;
+			visibility: hidden;
+			z-index: 950;
+			
+			ul {
+				position: relative;
+				display: block;
+				z-index: 990;
+				margin: 0;
+				padding: 0 !important;
+			}
+			
+			li {
+				position: absolute;
+				display: block;
+				text-align: center;
+				visibility: hidden;
+				overflow: hidden;
+				opacity: 0;
+				box-sizing: border-box;
+				transition: opacity .2s ease-out, visibility .2s ease-out;
+				
+				a {
+					transition: color .2s ease-out, background-color .2s ease-out;
+				}
+				
+				* {
+					display: block;
+					line-height: inherit;
+				}
+			}
+		}
+		
+		&.eltdf-bottom {
+			
+			.eltdf-social-share-dropdown {
+				bottom: 0;
+				left: 0;
+				
+				li {
+					width: $socialShareWidth;
+					height: $socialShareHeight;
+					line-height: $socialShareHeight;
+					border: 1px solid $default-border-color;
+					
+					&:not(:first-child) {
+						border-top: none;
+					}
+					
+					&.eltdf-facebook-share a:hover {
+						background-color: #3b5998;
+						color: #fff;
+					}
+					
+					&.eltdf-twitter-share a:hover {
+						background-color: #00aced;
+						color: #fff;
+					}
+					
+					&.eltdf-linkedin-share a:hover {
+						background-color: #007bb5;
+						color: #fff;
+					}
+					
+					&.eltdf-tumblr-share a:hover {
+						background-color: #32506d;
+						color: #fff;
+					}
+					
+					&.eltdf-pinterest-share a:hover {
+						background-color: #cb2027;
+						color: #fff;
+					}
+					
+					&.eltdf-vk-share a:hover {
+						background-color: #45668e;
+						color: #fff;
+					}
+					
+					a {
+						font-size: 12px;
+						color: $default-text-color;
+						background-color: #fff;
+					}
+					
+					@for $i from 1 through 7 {
+						&:nth-child(#{$i}) {
+							bottom: #{-$i*(($socialShareHeight))};
+						}
+					}
+				}
+			}
+		}
+		
+		&.eltdf-right {
+			
+			.eltdf-social-share-dropdown {
+				top: 0;
+				right: 0;
+				
+				li {
+					width: calc(#{$socialShareWidth} / 3);
+					
+					@for $i from 1 through 7 {
+						&:nth-child(#{$i}) {
+							left: #{($i - 1)*(($socialShareWidth / 3)) + 5};
+						}
+					}
+				}
+			}
+		}
+		
+		&.eltdf-left {
+			
+			.eltdf-social-share-dropdown {
+				top: 0;
+				left: 0;
+				
+				li {
+					width: calc(#{$socialShareWidth} / 3);
+					
+					@for $i from 1 through 7 {
+						&:nth-child(#{$i}) {
+							right: #{($i - 1)*(($socialShareWidth / 3)) + 5};
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
