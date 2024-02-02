@@ -3,7 +3,7 @@
 /*
 Plugin Name: FooGallery
 Description: FooGallery is the most intuitive and extensible gallery management tool ever created for WordPress
-Version:     2.4.7
+Version:     2.4.9
 Author:      FooPlugins
 Plugin URI:  https://fooplugins.com/foogallery-wordpress-gallery-plugin/
 Author URI:  https://fooplugins.com
@@ -25,9 +25,10 @@ if ( function_exists( 'foogallery_fs' ) ) {
         define( 'FOOGALLERY_PATH', plugin_dir_path( __FILE__ ) );
         define( 'FOOGALLERY_URL', plugin_dir_url( __FILE__ ) );
         define( 'FOOGALLERY_FILE', __FILE__ );
-        define( 'FOOGALLERY_VERSION', '2.4.7' );
+        define( 'FOOGALLERY_VERSION', '2.4.9' );
         define( 'FOOGALLERY_SETTINGS_VERSION', '2' );
         require_once FOOGALLERY_PATH . 'includes/constants.php';
+        require_once FOOGALLERY_PATH . 'includes/functions.php';
         // Create a helper function for easy SDK access.
         function foogallery_fs()
         {
@@ -41,6 +42,7 @@ if ( function_exists( 'foogallery_fs' ) ) {
                     'slug'           => 'foogallery',
                     'type'           => 'plugin',
                     'public_key'     => 'pk_d87616455a835af1d0658699d0192',
+                    'anonymous_mode' => foogallery_freemius_is_anonymous(),
                     'is_premium'     => false,
                     'has_paid_plans' => true,
                     'has_addons'     => true,
@@ -114,18 +116,6 @@ if ( function_exists( 'foogallery_fs' ) ) {
                 if ( is_admin() ) {
                     new FooGallery_Admin();
                     add_action( 'wpmu_new_blog', array( $this, 'set_default_extensions_for_multisite_network_activated' ) );
-                    foogallery_fs()->add_filter(
-                        'connect_message_on_update',
-                        array( $this, 'override_connect_message_on_update' ),
-                        10,
-                        6
-                    );
-                    foogallery_fs()->add_filter(
-                        'is_submenu_visible',
-                        array( $this, 'is_submenu_visible' ),
-                        10,
-                        2
-                    );
                     foogallery_fs()->add_filter(
                         'plugin_icon',
                         array( $this, 'freemius_plugin_icon' ),
@@ -281,30 +271,11 @@ if ( function_exists( 'foogallery_fs' ) ) {
                 return $extensions;
             }
             
-            /**
-             *
-             */
-            function override_connect_message_on_update(
-                $original,
-                $first_name,
-                $plugin_name,
-                $login,
-                $link,
-                $freemius_link
-            )
-            {
-                return sprintf( __( 'Hey %s', 'foogallery' ), $first_name ) . '<br>' . sprintf(
-                    __( '<h2>Thank you for updating to %1$s v%5$s!</h2>Our goal with this update is to make %1$s the best gallery plugin for WordPress, but we need your help!<br><br>We have introduced this opt-in so that you can help us improve %1$s by simply clicking <strong>Allow &amp; Continue</strong>.<br><br>If you opt-in, some data about your usage of %1$s will be sent to %4$s. If you skip this, that\'s okay! %1$s will still work just fine.', 'foogallery' ),
-                    '<b>' . $plugin_name . '</b>',
-                    '<b>' . $login . '</b>',
-                    $link,
-                    $freemius_link,
-                    FOOGALLERY_VERSION
-                );
-            }
-            
             function add_freemius_activation_menu()
             {
+                if ( foogallery_freemius_is_anonymous() ) {
+                    return;
+                }
                 global  $foogallery_fs ;
                 $parent_slug = foogallery_admin_menu_parent_slug();
                 if ( !$foogallery_fs->is_registered() ) {
@@ -317,15 +288,6 @@ if ( function_exists( 'foogallery_fs' ) ) {
                         array( $foogallery_fs, '_connect_page_render' )
                     );
                 }
-            }
-            
-            function is_submenu_visible( $visible, $id )
-            {
-                if ( 'addons' === $id ) {
-                    //hide addons submenu for now
-                    $visible = false;
-                }
-                return $visible;
             }
             
             /**
